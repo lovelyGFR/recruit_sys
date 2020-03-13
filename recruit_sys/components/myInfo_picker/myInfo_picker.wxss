@@ -1,0 +1,56 @@
+page {
+  font-size: 30rpx;
+}
+
+/* 盒子 */
+
+.row_detail {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  font-size: 30rpx;
+}
+
+/* 图标 */
+
+.moreIcon {
+  margin-right: 30rpx;
+  height: 18rpx;
+  width: 10rpx;
+}
+
+/* 个人信息 */
+
+.info {
+  display: flex;
+  margin-left: 30rpx;
+  color: #353535;
+  width: 250rpx;
+}
+
+.detail {
+  color: #888;
+  margin-right: 30rpx;
+  ext-overflow: -o-ellipsis-lastline; /*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;/*自适应盒子*/
+  -webkit-line-clamp: 1;/*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.hover {
+  background-color: #bfc0c0;
+  opacity: 0.9;
+}
+
+.section {
+  color: red;
+}

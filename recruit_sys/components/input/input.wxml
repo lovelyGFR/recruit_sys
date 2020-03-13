@@ -1,0 +1,17 @@
+<view bindtap='modalinput' class='rowBox' hover-class='hover'>
+  <view class="personInfo">
+    <slot name='star'></slot>{{key}}
+  </view>
+  <view class='right'>
+    <view class="detail">{{value}}</view>
+    <view wx:if="{{more !== 'false'}}">
+      <image class="more" src="{{more}}"></image>
+    </view>
+  </view>
+</view>
+<!-- 弹窗 -->
+<modal id="modal" hidden="{{hiddenmodalput}}" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <form>
+    <slot name='inputPlace'></slot>
+  </form>
+</modal>

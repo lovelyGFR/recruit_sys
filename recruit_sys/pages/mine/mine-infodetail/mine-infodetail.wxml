@@ -1,0 +1,8 @@
+<!--pages/infodetail/infodetail.wxml-->
+
+ <view class="infodetails" wx:for="{{detailinfo}}" wx:key="">
+
+         <view  class="infotail1">{{title}}</view>
+         <view  class="infotail2"> {{item.time}}  {{item.time1}}</view> 
+         <view  class="infotail3">{{item.content}}</view>
+ </view>

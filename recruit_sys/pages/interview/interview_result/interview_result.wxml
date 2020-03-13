@@ -1,0 +1,44 @@
+<view class="main">
+  <view class="superbox">
+    <!-- 空 -->
+    <view class="box1">
+
+    </view>
+    <!-- 测试题 -->
+    <view class="test">
+      测试题
+    </view>
+    <!-- 题1 -->
+    <view class="section_section_gap">
+      <view class="section__title">{{qone}}</view>
+      <radio-group name="radio-group" bindchange="changeone">
+        <label>
+          <radio value="radio1" />愿意</label>
+        <label>
+          <radio value="radio2" />不愿意</label>
+      </radio-group>
+    </view>
+    <!-- 题2 -->
+    <view class="section_section_gap">
+      <view class="section__title">{{qtwo}}</view>
+      <radio-group name="radio-group" bindchange="changetwo">
+        <label>
+          <radio value="radio1" />愿意</label>
+        <label>
+          <radio value="radio2" />不愿意</label>
+      </radio-group>
+    </view>
+    <!-- 题3 -->
+    <view class="section_section_gap">
+      <view class="section__title">{{qthree}}</view>
+      <radio-group name="radio-group" bindchange="changethree">
+        <label>
+          <radio value="radio1" />愿意</label>
+        <label>
+          <radio value="radio2" />不愿意</label>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 查询 -->
+  <button class="button" bindtap='inquire' wx:if="{{status === 1}}">查询</button>
+</view>

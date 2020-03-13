@@ -1,0 +1,20 @@
+<picker bindchange="bindPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="ticket_info" hover-class="click_change" hover-start-time="50" hover-stay-time="70">
+        <view class="superbox1">
+            <view class="icon">
+                <image src="../../images/1.png" />
+            </view>
+            <view class="boxone">
+                {{textone}}
+            </view>
+            <view class="boxtwo">
+                {{multiArray[multiIndex]}}
+            </view>
+        </view>
+        <view class="superbox2">
+            <view class="more">
+                <image src="../../images/more.png" />
+            </view>
+        </view>
+    </view>
+</picker>

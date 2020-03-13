@@ -1,0 +1,26 @@
+<!--pages/mineinfo/mineinfo.wxml-->
+
+<view class='mineinfo' wx:for="{{mlist}}" wx:key="" bindtap="go_deinfo" data-content="{{item.message_content}}" data-time="{{item.message_time}} " data-state="{{item.message_state}}" data-code="{{item.message_code}}" data-id="{{item.message_id}}">
+
+  <view class="include12">
+
+    <view class="box1">
+      <view class="infotext1">通知公告</view>
+      <view wx:if="{{item.message_state===0}}">
+        <image class="infotext12" src="/images/dot.png"></image>
+      </view>
+    </view>
+
+    <view class="infotext2">{{item.message_time}}</view>
+
+  </view>
+
+
+  <view class="include34">
+    <view class="infotext3">
+      <text class="{{item.message_state===0 ? 'textbefore' : 'textafter'}}">{{item.message_content}}</text> </view>
+    <image class="infotext4" src="{{images1}}"></image>
+  </view>
+
+
+</view>

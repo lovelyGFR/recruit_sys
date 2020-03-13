@@ -1,0 +1,89 @@
+page {
+  font-size: 30rpx;
+  background-color:#F6F6F6;
+}
+.txt{
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+}
+/* 盒子 */
+
+.topBox {
+  margin-top: 14rpx;
+}
+
+.mediubBox {
+  margin-top: 24rpx;
+}
+
+.bottomBox {
+  margin-top: 24rpx;
+}
+
+.submit::after{
+  border:none;
+}
+.submit{
+  background-color:white;
+  border-radius: 42rpx;
+  color:#4783B5;
+  font-family:PingFang SC;
+  font-size:30rpx;
+  width:690rpx;
+  height:84rpx;
+  margin-top:25rpx;
+  margin-bottom:35rpx; 
+}
+
+.hover {
+  background-color: #bfc0c0;
+  opacity: 0.9;
+}
+
+.moreIcon {
+  margin-right: 30rpx;
+  height: 18rpx;
+  width: 10rpx;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.hover {
+  background-color: #bfc0c0;
+  opacity: 0.9;
+}
+
+.row_detail {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  font-size: 30rpx;
+}
+
+.avatar {
+  margin: 0 auto;
+  margin-right: 30rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+}
+
+.info {
+  margin-left: 30rpx;
+  color: #353535;
+}
+
+
+.includefour{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}

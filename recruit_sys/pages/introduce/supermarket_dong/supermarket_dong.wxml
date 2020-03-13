@@ -1,0 +1,20 @@
+<!--pages/introduce/supermarket_dong/supermarket_dong.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">东区超市</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  东区超市有北和西两个入口，东区超市支持手机扫码，现金支付，学生卡。东西挺全的，基本能满足日常生活所需。东区超市周围有各类商铺，包括打印店、水果店、文品店、日化店等等
+  在这里我给大家简单介绍一下：北边入口左手边的一排商铺：有电信，移动，联通（在明向校区，电信的网是最好的，也是最贵的)，东超书店（主营大学内各类教材，可以买二手书，也可以照相），明向复印店（复印，打印，快照等等，也卖一些礼物和饰品），奥美西点，韵达快递，大学生电脑园（维修手机电脑)。西边入口处有东区水果店，还有七杯茶奶茶店，从东区南边的结账口出来就可以看见，主营奶茶，汉堡，夏天也卖冰淇淋，可以在美团上和饿了吗订外卖。旁边有家维修手机和电脑的店
+      </text>
+</view>

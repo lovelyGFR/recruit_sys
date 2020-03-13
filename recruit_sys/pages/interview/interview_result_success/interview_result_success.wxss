@@ -1,0 +1,128 @@
+page{
+    background-color: #F6F6F6;
+}
+/* 全局 */
+.bigbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+.superbox1{
+    width: 710rpx;
+    height: 1000rpx;
+    margin: 20rpx 20rpx 30rpx 20rpx;
+    border-radius: 10rpx;
+    background-color: #fff;
+}
+/* 空 */
+.superbox1 .box1{
+    height: 226rpx;
+}
+/* 面试通过的图片 */
+.superbox1 .pass{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.superbox1 .pass image{
+    height: 221rpx;
+    width: 165rpx;
+}
+/* 面试通过 */
+.superbox1 .txt1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items : center;
+    height: 72rpx;
+    font-size: 40rpx;
+    color: #54AA38;
+}
+/* 空 */
+.superbox1 .box2{
+    height: 118rpx;
+}
+/* 头像 */
+.superbox1 .avatar{
+    display: flex;
+    justify-content: center;
+}
+.superbox1 .avatar image{
+    width: 124rpx;
+    height: 124rpx;
+    border-radius: 50%;
+}
+/* 恭喜通过 */
+.superbox1 .txt2{
+    height: 62rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24rpx;
+    color: #353535;
+    margin-top: 20rpx;
+}
+.superbox1 .txt9{
+    height: 36rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24rpx;
+    color: #353535;
+    margin-top: 1rpx;
+}
+/* 点击生成图片 */
+.share .button{
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 710rpx;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 42rpx;
+    /* background-color:#52A9DA; */
+    background: linear-gradient(to right, #49ADD6, #7A94ED);
+    font-size: 30rpx;
+    color: #fff;
+}
+.share .button-hover{
+    opacity: 0.9;
+}
+/* 最下面的文字 */
+.click_copy{
+    margin: 56rpx 20rpx 30rpx 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.click_copy .leftinfo{
+    display: flex;
+    flex-direction: row;
+}
+.click_copy .txt3{
+    font-size: 22rpx;
+    color: #888888;
+}
+.click_copy .txt4{
+    font-size: 22rpx;
+    color: #4783B5;
+}
+.click_copy .group_number{
+    color: #4783B5;
+    font-size: 24rpx;
+}
+.click_copy .txt5{
+    color: #ED2424;
+    font-size: 22rpx;
+    font-weight: 380;
+}
+/* 点击复制群号 */
+.click_copy .copy{
+    font-size: 25rpx;
+    color: #4783B5;
+}

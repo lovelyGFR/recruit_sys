@@ -1,0 +1,19 @@
+<!--pages/introduce/teach/teach.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">教学楼</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  大家平时上课的地方。 
+      </text>
+</view>

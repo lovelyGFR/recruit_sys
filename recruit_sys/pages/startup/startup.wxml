@@ -1,0 +1,35 @@
+  <!-- 整个页面 -->
+  <view class="main">
+    <!-- 上半 -->
+    <view class="bigbody">
+      <view class="boxone">
+
+      </view>
+      <!-- 图片 -->
+      <view class="ban">
+        <image class="pic" src="https://yun-recruit-new.oss-cn-beijing.aliyuncs.com/images/startupone.png" />
+      </view>
+      <!-- logo -->
+      <view class="logo">
+        <image src="https://yun-recruit-new.oss-cn-beijing.aliyuncs.com/images/logo.png" />
+      </view>
+      <!-- 文字 -->
+      <view class="text">
+        <view class="textone">
+          登录后将获取以下权限
+        </view>
+        <view class="texttwo">
+          获得你的公开信息(昵称,头像等)
+        </view>
+      </view>
+
+    </view>
+    <!-- 下半 -->
+    <view class="footer">
+
+      <button class='button' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">
+        授权登录
+      </button>
+
+    </view>
+  </view>

@@ -1,0 +1,96 @@
+/* pages/mineinfo/mineinfo.wxss */
+
+page{
+  background-color: #F6F6F6;
+}
+
+.mineinfo{
+  background-color: white;
+  width:710rpx;
+  height:150rpx;
+  border-radius: 10rpx;
+  margin:20rpx;
+  display:flex;
+  flex-direction: column ;
+}
+
+.infotext1{
+  font-family: PingFang SC;
+  font-size:26rpx;
+  margin-top:25rpx;
+  color:#888888;
+  margin-left:20rpx;
+}
+
+.infotext12{
+  width:23rpx;
+  height:23rpx;
+  margin-top:20rpx;
+}
+
+
+.textbefore{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+    color:#222222;
+}
+
+.textafter{
+  font-size: 24rpx;
+  font-family: PingFang SC;
+    color:#999999;
+}
+
+
+
+.infotext2{
+  font-family: PingFang SC;
+  font-size:20rpx;
+  margin-top:25rpx;
+  margin-right:35rpx;
+  color:#999999;
+}
+
+  .infotext3 {
+  /* font-size: 24rpx;
+  font-family: PingFang SC; */
+  display: block;            
+  width: 500rpx;   
+  height:70rpx;          
+  word-break: keep-all;      
+  white-space: nowrap;       
+  overflow: hidden;          
+  text-overflow: ellipsis;   
+  margin-left:20rpx;
+  margin-top:30rpx;
+  /* color:#222222; */
+}
+
+
+.infotext4{
+  width:10rpx;
+  height:18rpx;
+  margin-right:35rpx;
+  margin-top:38rpx;
+}
+
+.include12{
+  display:flex;
+  flex-direction: row ;
+  justify-content:space-between;
+}
+
+.include34{
+  display:flex;
+  flex-direction: row ;
+  justify-content:space-between;
+}
+
+.newscenter{
+  display:flex;
+  flex-direction: row ;
+}
+.box1{
+  display:flex;
+  flex-direction: row;
+}

@@ -1,0 +1,18 @@
+<!--pages/again/again.wxml-->
+<view class='div_f'>
+  <view class='div_1'>
+     <view class='div_2'></view>
+     <text class='text_1'>振翅云顶之上，极目星辰大海</text>
+     <view class='div_3'></view>
+     <text class='text_2'>申请书纸质版提交截止日期为{{timetwo}}</text>
+  </view>
+  <view class='div_4'>
+        <text class='point_out'>申请书照片提交成功</text>
+        <image class='success' src='/images/success.png'></image>
+        <text class='lastWord'>请于{{timeone}}号将申请书纸质版交于大数据学院9层</text>
+  </view>
+</view>
+
+<view class='div_s'>
+  <button class='button_2' bindtap='goToSuccess'>完成报名</button>
+</view>

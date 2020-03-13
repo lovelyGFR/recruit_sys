@@ -1,0 +1,24 @@
+<!--pages/newsdetails/newsdetails.wxml-->
+
+<view class="littletop"></view>
+ <view class="newsdetails" wx:for="{{detaillist}}"  wx:key="">
+
+<view  class="newstail1">
+{{item.title}}
+</view>
+<view  class="newstail2"> 
+<view>
+{{item.time}}
+</view>
+<view class="author">
+by{{item.author}}
+</view>
+</view>
+
+<image class="newstail3" src="  {{item.img}}" ></image>
+<view  class="newstail4">
+{{item.content}}
+</view>
+
+</view>
+

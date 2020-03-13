@@ -1,0 +1,19 @@
+<!--pages/introduce/play_student/play_student.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">乒乓球场</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  乒乓球场在学生活动中心一层室内，体育课选修乒乓球的话就在这里。在明向校区，一些宿舍楼前也会设有乒乓球台，比如13,14号楼前就有。
+      </text>
+</view>

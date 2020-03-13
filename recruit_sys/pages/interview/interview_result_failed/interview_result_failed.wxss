@@ -1,0 +1,36 @@
+page{
+    background-color: #F6F6F6;
+}
+.superbox1{
+    margin: 20rpx;
+    border-radius: 10rpx;
+    height: 96vh;
+    background-color: #fff;
+}
+.superbox1 .box1{
+    height: 360rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 图片 */
+.superbox1 .box1 image{
+    width: 144rpx;
+    height: 192rpx;
+}
+/* 面试失败 */
+.superbox1 .box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30rpx;
+    color: #7E8388;
+    margin-top: 30rpx;
+}
+.txt{
+    margin : 60rpx 20rpx 20rpx 20rpx;
+    font-size: 30rpx;
+    color : #7E8388;
+    line-height: 40rpx;
+}

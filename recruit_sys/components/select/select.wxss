@@ -1,0 +1,29 @@
+.selectbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 74rpx;
+    border: 1px solid #E5E5E5;
+    margin : 30rpx 30rpx 0 30rpx;
+    background-color: #F6F6F6;
+    border-radius :12rpx;
+}
+.selectbox .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 590rpx;
+}
+.selectbox .content .time{
+    font-size: 30rpx;
+    color: #353535;
+}
+.selectbox .content image{
+    display: flex;
+    flex-direction: column;
+    justify-content :center;
+    width: 18rpx;
+    height: 10rpx;
+}

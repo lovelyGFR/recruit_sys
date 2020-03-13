@@ -1,0 +1,48 @@
+page {
+  font-size: 30rpx;
+}
+
+/* 盒子 */
+
+.row_detail {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  font-size: 30rpx;
+}
+
+/* 图标 */
+
+.moreIcon {
+  margin-right: 30rpx;
+  height: 18rpx;
+  width: 10rpx;
+}
+
+/* 个人信息 */
+
+.info {
+  display: flex;
+  margin-left: 30rpx;
+  color: #353535;
+}
+
+.detail {
+  color: #888;
+  margin-right: 30rpx;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.hover {
+  background-color: #bfc0c0;
+  opacity: 0.9;
+}
+.section{
+  color: red;
+}

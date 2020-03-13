@@ -1,0 +1,28 @@
+<!-- header -->
+<view class="header">
+
+</view>
+<!-- trunk -->
+<view class="trunk">
+    <!-- title -->
+    <view class="superbox1">
+        <view class="box1">{{aData}}</view>
+        <view class="box2"><text decode="{{true}}">{{time}}</text></view>
+    </view>
+    <!-- article -->
+    <view class="superbox2">
+        <!-- 文章1 -->
+        <view class="article1">
+            {{cData}}
+        </view>
+        <!-- 图片 -->
+        <view class="picture">
+            <image mode="widthFix" src="https://yun-recruit-new.oss-cn-beijing.aliyuncs.com/images/pic.png" bind:tap="pic" />
+        </view>
+        <!-- 文章2 -->
+        <view class="article2">
+            {{dData}}
+        </view>
+    </view>
+    <!-- <button class="button" hover-class="toindex" bindtap="toindex">去抢票</button> -->
+</view>

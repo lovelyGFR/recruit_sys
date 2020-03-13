@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人信息",
+  "usingComponents": {
+    "c-info": "../../../components/myInfo/myInfo",
+    "c-infoPicker": "../../../components/myInfo_picker/myInfo_picker"
+  }
+}

@@ -1,0 +1,22 @@
+<!--pages/introduce/dorm/dorm.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">明泽苑</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  明向校区宿舍须知： 
+（1）宿舍为上床下桌，宿舍内均无独卫独浴空调风扇，有阳台，暖气很足
+（2）每月用电超过15度的免费度数后，按照0.5元/度收费，欠费会停电。记得及时去楼管处续交电费，只有每周二才能交电费，所以一定要清楚剩余电有多少。
+（3)周日到周四每晚11点熄灯停电，早晨6点来电。周五晚上和周六晚上不会熄灯，一直有电。
+      </text>
+</view>

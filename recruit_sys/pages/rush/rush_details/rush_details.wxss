@@ -1,0 +1,82 @@
+page{
+    background-color: #fff;
+}
+/* header */
+.header{
+    background-color: #F6F6F6;
+    width: 750rpx;
+    height: 20rpx;
+}
+
+/* trunk */
+.trunk{
+    /* height: 170rpx; */
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+/* title */
+.trunk .superbox1{
+    height: 170rpx;
+}
+.trunk .superbox1 .box1{
+    margin-top: 38rpx;
+    color: #222222;
+    font-size: 40rpx;
+}
+.trunk .superbox1 .box2{
+    margin-top: 38rpx;
+    color: #999999;
+    font-size: 24rpx;
+}
+/* article */
+/* 文章1 */
+.superbox2 .article1{
+    font-size: 24rpx;
+    /* margin-top: 38rpx; */
+    color: #353535;
+    line-height:38rpx;
+}
+/* 图片 */
+.superbox2 .picture image{
+    margin-top: 26rpx;
+    width: 100%;
+    border-radius: 10rpx;
+}
+/* 文章2 */
+.superbox2 .article2{
+    font-size: 24rpx;
+    margin-top: 26rpx;
+    color: #353535;
+    line-height:38rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button{
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 690rpx;
+    margin-top: 30rpx;
+    border-radius: 42rpx;
+    background-color:#52A9DA;
+    font-size: 30rpx;
+    color: #fff;
+}
+.toindex{
+    opacity: 0.9;
+}
+
+
+

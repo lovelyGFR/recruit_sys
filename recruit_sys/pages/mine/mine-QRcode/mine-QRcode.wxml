@@ -1,0 +1,9 @@
+<!--pages/mine/mine-QRcode/mine-QRcode.wxml-->
+
+<view class="QR">
+<image  class="QR1"  src="{{QRimages}}"></image>
+<view class="QRtext">
+<text  class="text1">请等待管理员扫描哦~</text>
+<text  class="text2">此码用于面试签到和申请书的提交</text>
+</view>
+</view>

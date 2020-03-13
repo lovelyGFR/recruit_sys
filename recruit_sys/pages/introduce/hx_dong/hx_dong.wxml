@@ -1,0 +1,23 @@
+<!--pages/introduce/hx_dong/hx_dong.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">东门</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  明向校区东门，邻街定阳路，平常门口会卖一些小吃，对面为山西中医药大学，山西中医药大学内有个郭家堡医院。住在东区的同学可以去中医药打篮球，比去操场的篮球场近，一近中医药西门就是篮球场。
+      </text>
+</view>
+
+
+

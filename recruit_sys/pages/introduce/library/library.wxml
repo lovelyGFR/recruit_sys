@@ -1,0 +1,20 @@
+<!--pages/introduce/library/library.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">临时图书馆</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  临时图书馆位于轻纺学院对面，一共有五层，其中在一层有图书的借还，在二到四层每层都有自习室。其中图书是用学生卡借还，借书的期限是一个月，大家一定要及时归还哦。据学校说图书馆今年就能使用了，所以我也不详细给大家介绍临时图书馆了。咱们学校最高最大的建筑就是图书馆了，在这里我也就不给大家导航了。
+      </text>
+</view>

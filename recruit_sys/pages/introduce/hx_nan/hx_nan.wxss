@@ -1,0 +1,5 @@
+@import '../../../style/map.wxss';
+page{
+  background-color: #f6f6f6;
+  width: 100vw;
+}

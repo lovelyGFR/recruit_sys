@@ -1,0 +1,21 @@
+<!--pages/introduce/replica/replica.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">印刷厂</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  听印刷厂这个名字就知道这个和东西区一层的打印店不太一样，这个印刷厂位于行勉楼A座的西端，设备比较先进，大家如果就是平常普通的打印，复印在东西区一层的打印店完全就可以对付，但是如果对打印，复印的质量要求比较高，或者需要彩印一些图片，建议来印刷厂，在印刷厂打印和复印的价格和其他打印店价格是一样的。
+      </text>
+</view>
+
+

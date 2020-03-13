@@ -1,0 +1,46 @@
+/* components/row-nature/row-nature.wxss */
+
+/* @import "../../app.wxss"; */
+
+.rowBox {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 88rpx;
+}
+
+.more {
+  margin-right: 30rpx;
+  width: 10rpx;
+  height: 20rpx;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.personInfo {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  width: 250rpx;
+}
+
+.detail {
+  ext-overflow: -o-ellipsis-lastline; /*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;/*自适应盒子*/
+  -webkit-line-clamp: 1;/*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+  margin-right: 30rpx;
+  font-size: 30rpx;
+  color: #888;
+}
+
+.hover {
+  background-color: #bfc0c0;
+  opacity: 0.9;
+}

@@ -1,0 +1,81 @@
+<!--pages/myPage/my/my.wxml-->
+
+<view class="allbox">
+  <view class="all">
+
+    <view class="super" wx:if="{{!isHide}}">
+      <view class="one">
+        <view class="tou">
+          <image class="pict" src="../../../images/login.jpg" />
+        </view>
+      </view>
+      <view class="three">
+          <view class="txtone">未登录</view>
+          <view class="txttwo">登录后查看信息</view>
+      </view>
+      <view class="two">
+        <view class="login" bind:tap="doit">登录</view>
+      </view>
+    </view>
+
+
+    <!-- 头像及更多 -->
+    <view class="topBox" bindtap='goTopersonInfo' hover-class='hover' wx:if="{{isHide}}">
+      <image wx:if="{{userInfo.user_avatar}}" src="{{userInfo.user_avatar}}" class='avatar'></image>
+      <view class="nameBox" hover-class='hover'>
+        <view class="name">{{userInfo.user_name}}
+          <image src="{{userInfo.user_sex==='男'?manIcon:womanIcon}}" class="sexLogo"></image>
+        </view>
+        <view class="wxNum">地区：{{userInfo.user_vxProvince+' '+userInfo.user_vxCity}}</view>
+      </view>
+      <image src="{{more}}" class='more'></image>
+    </view>
+
+
+    <!--我的消息-->
+
+    <view class="myNewsBox" hover-class='hover' bindtap='goMyNews'>
+      <view class="forflex">
+        <view class="myNews_icon" hover-class='hover'>
+          <image src="{{myNewsIcon}}" class="myNewsIcon"></image>
+        </view>
+        <view class="myNews">我的消息</view>  
+        <image wx:if="{{flags&&flag}}" class="imgdot" src="/images/dot.png"></image>
+      </view>
+      <image src="{{more}}" class='more1'></image>
+    </view>
+
+
+    <!--关于我们-->
+
+    <view class="aboutBox" hover-class='hover' bindtap='goToQRcode'>
+      <view class="forflex">
+        <view class="about_icon" bindtap='goToQRcode'>
+          <image src="{{aboutIcon}}" class="aboutIcon"></image>
+        </view>
+        <view class="about">我的二维码</view>
+      </view>
+      <image src="{{more}}" class='moreb'></image>
+    </view>
+
+    <!--我的留言板-->
+
+    <view class="messagebox" hover-class='hover' bindtap='goMessage'>
+      <view class="forflex">
+        <view class="myNews_icon" hover-class='hover'>
+          <image src="{{myboard}}" class="myboard"></image>
+        </view>
+        <view class="myNews">我的意见箱</view>
+      </view>
+      <image src="{{more}}" class='morec'></image>
+    </view>
+
+  </view>
+
+  <button open-type="share" class="share" hover-class="shareclass">推荐给朋友</button>
+</view>
+
+
+<mp-dialog title="提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>请先登录之后再进入哦</view>
+</mp-dialog>

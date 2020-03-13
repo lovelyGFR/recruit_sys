@@ -1,0 +1,237 @@
+/* 大容器 */
+page{
+    background-color: #F6F6F6;
+}
+.container1{
+   
+    height:100%;
+    width: 100%;
+    font-family: "PingFang SC";
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    /* align-content: center;      */
+    padding:  0;
+    background-color: #F6F6F6;
+}
+
+
+
+/* head_and_body */
+.head_and_body{
+    height:100%;
+    width: 100%;
+    font-family: "PingFang SC";
+    display: flex;
+    flex-direction: column;
+    align-content: center;     
+    padding:  0;
+    background-color: #F6F6F6;
+}
+
+/* 云顶书院19届招生宣讲会 */
+.container1 .click_details{
+    height: 240rpx;
+    width: 100%;
+    opacity: 0.9;
+}
+.box{
+    display: flex;
+    justify-content : space-between;
+    flex-direction: row;
+    height: 240rpx;
+    width: 100%;
+    background-color: #fff;
+}
+.superbox{
+    padding: 0 0 0 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    font-size: 40rpx;
+    color: #222222;
+    margin-top: 64rpx;
+    letter-spacing:1px
+}
+.box2{
+    font-size: 24rpx;
+    color: #888888; 
+    margin-top: 38rpx;
+    letter-spacing:1px
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content :center;
+    width: 40rpx;
+    height: 240rpx;
+}
+image{
+    width: 10rpx;
+    height: 18rpx;
+}
+
+/* 选择场次 */
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content : flex-start;
+    height: 200rpx;
+    width: 710rpx;
+    margin: 30rpx 20rpx;
+    border-radius:12rpx;
+    background-color: #fff;
+}
+.time .superbox1{
+    display: flex;
+    flex-direction: column;
+    justify-content : flex-end;
+    align-items: center;
+    height: 56rpx;
+    width: 710rpx;
+    font-size: 24rpx;
+}
+.time .superbox2{
+    width: 650rpx;
+    height: 74rpx;
+    border-radius: 10rpx;
+    margin: 30rpx;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 30rpx;
+    color :#353535;
+}
+
+/* 个人信息 */
+/* .info {
+
+    height: 94rpx;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+.input {
+    width: 350rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   */
+
+
+
+/* footer */
+/* 倒计时 */
+.countdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 84rpx;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.countdown .radiusleft{
+    width: 84rpx;
+    height: 84rpx;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-color: #ffffff;
+}
+.countdown .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #54AA38;
+    font-size: 30rpx;
+    width: 542rpx;
+    height: 84rpx;
+    background-color: #ffffff;   
+}
+.countdown .radiusright{
+    width: 84rpx;
+    height: 84rpx;
+    border-top-right-radius: 42rpx;
+    border-bottom-right-radius: 42rpx;
+    background-color: #ffffff;
+}
+
+/* 抢票按钮 */
+.button{
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 710rpx;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 42rpx;
+    /* background-color:#52A9DA; */
+    background: linear-gradient(to right, #49ADD6, #7A94ED);
+    font-size: 30rpx;
+    color: #fff;
+}
+.button-hover{
+    opacity: 0.9;
+}
+
+/* 抢票结束 */
+.end_tickets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 84rpx;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.end_tickets .radiusleft{
+    width: 84rpx;
+    height: 84rpx;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-color: #ffffff;
+}
+.end_tickets .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #AAAAAA;
+    font-size: 30rpx;
+    width: 542rpx;
+    height: 84rpx;
+    background-color: #ffffff;   
+}
+.end_tickets .radiusright{
+    width: 84rpx;
+    height: 84rpx;
+    border-top-right-radius: 42rpx;
+    border-bottom-right-radius: 42rpx;
+    background-color: #ffffff;
+}
+
+/* 查看门票 */
+.view_tickets{
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 710rpx;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 42rpx;
+    /* background-color:#52A9DA; */
+    background: linear-gradient(to right, #49ADD6, #7A94ED);
+    font-size: 30rpx;
+    color: #fff;
+}
+.view_tickets-hover{
+    opacity: 0.9;
+}

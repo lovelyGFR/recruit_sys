@@ -1,0 +1,28 @@
+<!--pages/newscenter/newscenter.wxml-->
+<view class="topbox"></view>
+
+<view  class="includeall">
+<view>
+ <view class='newscenter' wx:for="{{newslist}}" wx:key="" bindtap="go_detail" data-news_title="{{item.news_title}}" data-news_author="{{item.news_author}}" data-content="{{item.news_content}}" data-time="{{item.time}}" data-img = "{{item.img}}">
+
+
+<view class="include12">
+
+<view  class="newstext1">
+{{item.news_title}} 
+</view>
+<view  class="newstext2">
+{{item.time}}
+by {{item.news_author}}
+</view>
+
+</view>
+
+<image class="newstext3" src="  {{item.img}}" ></image>
+
+</view>
+</view>
+ <!-- 上拉加载 -->
+    <view bindtap="loadMore" data-page="{{page}}" class="tomore"><view>{{showtext}}</view></view>  
+
+</view>

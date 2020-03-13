@@ -1,0 +1,70 @@
+<view class="container1">
+    <view class="head_and_body">
+        <!-- 云顶书院19届招生宣讲会 -->
+        <view class="box" hover-class="click_details" bindtap="details">
+
+            <view class="superbox">
+                <view class="box1">{{aData}}</view>
+                <view class="box2"><text decode="{{true}}">{{bData}}&nbsp;共{{cData}}场&nbsp;{{brief_num}}人/场</text></view>
+            </view>
+
+            <view class="box3">
+                <image mode="widthFix" src="../../../images/more.png" />
+            </view>
+
+        </view>
+
+        <!-- 选择场次 -->
+        <view class="time">
+            <view class="superbox1">
+                <view class="txt">
+                    活动场次
+                </view>
+            </view>
+
+            <view class="superbox2">
+                <text decode="{{true}}">&nbsp;&nbsp;{{time}}</text>
+            </view>
+        </view>
+        <!-- 填写个人信息 -->
+        <view>
+            <college bind:college="get_college" textone="{{collegetype}}" multiArray="{{List}}" multiIndex="{{Index}}"></college>
+            <scanf bind:text="get_name" textone="{{nametype}}" name="{{name_value}}"></scanf>
+            <scanf1 bind:text="get_num" textone="{{numtype}}" name="{{num_value}}"></scanf1>
+        </view>
+
+    </view>
+
+    <view class="footer">
+        <!-- 倒计时 -->
+        <view class="countdown">
+            <view class="radiusleft">
+
+            </view>
+            <view class="center">
+                {{countDownDay}}天{{countDownHour}}时{{countDownMinute}}分{{countDownSecond}}秒后可抢
+            </view>
+            <view class="radiusright">
+
+            </view>
+        </view>
+        <!-- 抢票 -->
+        <button class="button" hover-class="button-hover" wx:if="{{status == 3}}" bindtap="show_status"
+            disabled="{{whether_to_disable}}">抢票</button>
+        <!-- 抢票结束 -->
+        <view class="end_tickets" wx:if="{{status == 0}}">
+            <view class="radiusleft">
+
+            </view>
+            <view class="center">
+                抢票已结束
+            </view>
+            <view class="radiusright">
+
+            </view>
+        </view>
+        <!-- 查看门票 -->
+        <button class="view_tickets" hover-class="view_tickets-hover" wx:if="{{status == 1}}"
+            bindtap='view_tickets'>查看门票</button>
+    </view>
+</view>

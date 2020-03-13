@@ -1,0 +1,37 @@
+<!--pages/result/result.wxml-->
+
+<view class='box'>
+  <view class='box_1'>
+    <image class='top' src='/images/top.png'> </image>
+    <image class='top_1' src='/images/top_1.png'></image>
+    <view class='box_2'>
+      <image class='log' src='/images/yunding_log.png'></image>
+      <image class='word' src='/images/word.png'></image>
+    </view>
+  </view>
+  <view class='box_3'>
+    <image class='text' src='/images/text.png'></image>
+  </view>
+  <view class='box_4'>
+    <view class='success_1'>
+      <text class='success'>★ ★ ★ ★   录用通知书    ★ ★ ★ ★ </text>
+    </view>
+    <image class='row' src='/images/row.png'></image>
+  </view>
+  <view class='box_5'>
+    <text space='emsp' class='name'>{{name}}同学:</text>
+    <text space='emsp' class='encourge'>
+  恭喜你通过了云顶书院的面试，成为了云顶书院适应期的一名成员。相信你在适应期阶段一定能够和你在面试中的表现一样优秀。同时也希望，在接下来的日子里，你能和云顶书院的所有成员一起不断努力，做经天纬地的云顶人，“振翅云顶之上，极目星辰大海!”
+           </text>
+    <view class='box_end'>
+      <image class='avator' src='{{avatar}}'></image>
+      <text class='lastWord'>恭喜\n{{name}}同学\n通过云顶书院面试</text>
+      <image src='../../../images/ma.jpg' class='SmallProgramCode'></image>
+    </view>
+  </view>
+  <view class='box_6'>
+    <image class='endWord' src='/images/endWord.png'></image>
+  </view>
+
+
+</view>

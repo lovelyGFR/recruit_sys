@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "select": "../../../components/select/select"
+  },
+  "navigationBarTitleText": "面试系统",
+  "navigationBarBackgroundColor": "#65C2E5"
+}

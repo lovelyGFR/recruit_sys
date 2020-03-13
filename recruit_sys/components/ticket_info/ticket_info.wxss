@@ -1,0 +1,44 @@
+/* components/ticket_info/ticket_info.wxss */
+/* 大容器 */
+.ticket_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 94rpx;
+    width: 750rpx;
+    background-color: #fff;
+}
+
+/* 点击动效 */
+.click_change{
+    height: 94rpx;
+    width: 750rpx;
+    /* background-color: #BFC0C0; */
+}
+/* 前面的元素 */
+.ticket_info .superbox1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 94rpx;
+}
+.ticket_info .superbox1 .icon image{
+    width: 32rpx;
+    height: 32rpx;
+    margin-left: 30rpx;
+}
+.ticket_info .boxone{
+    font-size: 30rpx;
+}
+/* 后面的元素 */
+.ticket_info .superbox2{
+    display: flex;
+    flex-direction: row;
+    justify-content : flex-end;
+    font-size: 30rpx;
+    color: #888888;
+    margin-right: 30rpx;
+    align-items: center;
+}
+

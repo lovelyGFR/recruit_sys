@@ -1,0 +1,366 @@
+/**index.wxss**/
+
+page{
+  background-color: #F6F6F6;
+  max-height: 7000rpx;
+} 
+
+
+/* 授权 */
+
+ 
+
+
+
+/* 第一部分 */
+swiper{
+  height: 332rpx;
+  width:710rpx;
+  border-radius: 10rpx;
+  margin-left:22rpx;
+  margin-top:25rpx;
+  overflow:hidden;  /* 让照片循环的时候不变成直角 */
+}
+swiper .wx-swiper-dots.wx-swiper-dots-horizontal{
+  margin-bottom: 10rpx; 
+}
+swiper .wx-swiper-dot{
+    width:12rpx;
+    display: inline-flex;
+    height: 12rpx;
+    justify-content:space-between;
+}
+
+ swiper .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1;
+    background:white;
+    border-radius: 10rpx;
+    opacity: 0.4;
+    
+} 
+ swiper .wx-swiper-dot-active::after{
+    content: '';
+    flex-grow: 50;
+    border-radius: 10rpx;
+    background:white;  
+} 
+
+ swiper-item{
+  height: 332rpx;
+  width:710rpx;
+  border-radius: 10rpx;
+  overflow:hidden;  /* 让照片循环的时候不变成直角 */
+} 
+
+swiper-item image {
+  height: 332rpx;
+  width: 710rpx;
+}
+
+/* 第二部分 */
+.abc{
+  opacity: 0.9;
+}
+/* 抢票 */
+.ticket{
+  background-color:white;
+  width:300rpx;
+  height:116.5rpx;
+  margin-top:25rpx;
+  display:  flex;
+  flex-direction:  row;
+  justify-content:  flex-start;
+  border-right:0.1rpx solid rgb(236, 235, 235);
+  border-bottom:0.1rpx solid rgb(236, 235, 235); 
+}
+
+.ticket1{
+  width:86rpx;
+  height:86rpx;
+  margin-left:15rpx;
+  margin-top:7rpx;
+}
+
+.ticket2{
+  font-family:PingFang SC;
+  font-size:30rpx;
+  margin-left:20rpx;
+  margin-top:29rpx;
+}
+
+/* 报名 */
+.apply{
+  background-color:white;
+  width:300rpx;
+  height:116.5rpx;
+  margin-left:1rpx;
+  margin-top:25rpx;
+  display:  flex;
+  flex-direction:  row;
+  justify-content:  flex-start;
+  border-bottom:0.1rpx solid rgb(236, 235, 235);
+}
+
+.apply1{
+  width:86rpx;
+  height:86rpx;
+  margin-left:45rpx;
+  margin-top:7rpx;
+}
+
+.apply2{
+  font-family:PingFang SC;
+  font-size:30rpx;
+  margin-left:20rpx;
+  margin-top:29rpx;
+}
+
+/* 面试*/
+.seeface{
+  background-color:white;
+  width:300rpx;
+  height:116.5rpx;
+  margin-top:-32rpx;
+  display:  flex;
+  flex-direction:  row;
+  justify-content:  flex-start;
+  border-right:0.1rpx solid rgb(236, 235, 235);
+
+}
+
+.seeface1{
+  width:86rpx;
+  height:86rpx;
+  margin-left:15rpx;
+  margin-top:25rpx;
+}
+
+.seeface2{
+  font-family:PingFang SC;
+  font-size:30rpx;
+  margin-left:20rpx;
+  margin-top:44rpx;
+}
+
+/* 导航 */
+.map{
+  background-color:white;
+  width:300rpx;
+  height:116.5rpx;
+  margin-left:1rpx;
+  display:  flex;
+  flex-direction:  row;
+  justify-content:  flex-start; 
+  margin-top:-32rpx;
+}
+
+.map1{
+  width:86rpx;
+  height:86rpx;
+  margin-left:45rpx;
+  margin-top:25rpx;
+}
+
+.map2{
+  font-family:PingFang SC;
+  font-size:30rpx;
+  margin-top:44rpx;
+  margin-left:20rpx;
+}
+
+/* 边框盒子*/
+
+.bigpart{
+  background-color: white;
+  display:flex;
+  flex-wrap: wrap; 
+  flex-direction:  row; 
+  width:710rpx;
+  height:292rpx;
+ border-radius: 10rpx;
+  margin-left:22rpx;
+  margin-top:25rpx;
+  justify-content:  center;
+  align-items:  center;
+}
+
+/* 第三部分 */
+
+.jumpto{
+  margin-right: 35rpx; 
+  display:flex;
+  justify-content:center;
+ align-items:center;
+}
+
+.jumpto1{
+  font-family: PingFang SC;
+  font-size:20rpx;
+  margin-right:11rpx;
+  color: #888888;
+}
+
+.jumpto2{
+  width:10rpx;
+  height:18rpx;
+  margin-top:5rpx;
+  margin-left:3rpx;
+}
+
+.bigboxx{
+  width:660rpx;
+  height:200rpx;
+  background-color: white;
+  border-radius:  0 10rpx 10rpx 10rpx;
+  margin-left:20rpx;
+  font-family: PingFang SC;
+  font-size:20rpx;
+  line-height:40rpx; 
+  color:#666666;
+  padding:25rpx;
+}
+
+.smallbox{
+  width:136rpx;
+  height:52rpx;
+  background-color: white;
+  border-radius: 10rpx 10rpx 0 0;
+  margin-left:20rpx;
+  margin-top:20rpx;
+  display:flex;
+  justify-content:  center;
+  align-items:  center;
+}
+
+.smallbox1{
+  font-family: PingFang SC;
+  font-size:24rpx;
+  color: #222222;
+}
+
+.SMALLS{
+  display:flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+
+
+
+/* 第四部分 */
+
+.jump{
+  margin-right: 35rpx; 
+  display:flex;
+  justify-content:center;
+ align-items:center;
+}
+
+.jump1{
+  font-family: PingFang SC;
+  font-size:20rpx;
+  margin-right:11rpx;
+ color: #888888;
+}
+
+.jump2{
+  width:10rpx;
+  height:18rpx;
+  margin-top:5rpx;
+  margin-left:3rpx;
+}
+
+.smallbox2{
+  width:136rpx;
+  height:52rpx;
+  background-color: white;
+  border-radius: 10rpx 10rpx 0 0;
+  margin-left:20rpx;
+  margin-top:20rpx;
+  display:flex;
+  justify-content:  center;
+  align-items:  center;
+}
+
+.smallbox21{
+  font-family: PingFang SC;
+  font-size:24rpx;
+}
+
+.SMALLS2{
+  display:flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+
+.bigbox{
+   background-color:white; 
+   border-radius:  0 10rpx 10rpx 10rpx;
+   width:710rpx;
+   margin-left:20rpx;
+}
+
+
+
+
+.list{
+  padding:5rpx;
+  width:700rpx;
+  border-bottom:  1rpx  solid  rgb(236, 235, 235);
+  height:170rpx;
+}
+
+.newstitle1{
+  font-family: PingFang SC;
+  font-size:30rpx;
+  color:#222222;
+}
+.newsimages{
+  width:230rpx;
+  height:130rpx;
+  margin-right:10rpx;
+  margin-top:20rpx; 
+  border-radius: 10rpx;
+}
+.newsauthor{
+  padding-top:-150rpx;
+  font-family: PingFang SC;
+  font-size:20rpx;
+  margin-left:14rpx;
+  color:#999999;
+}
+.newstime{
+  font-family: PingFang SC;
+  font-size:20rpx;
+  color:#999999;
+}
+
+.words{
+  display:flex;
+  flex-direction: row ;
+}
+
+.wordss{
+  display:flex;
+  flex-direction: column ;
+  margin-left:10rpx;
+   /* height:170rpx; */
+  width:380rpx; 
+  margin-top:20rpx; 
+   justify-content: space-between;
+}
+
+.wordsss{
+  display:flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+
+.donetext{
+ margin-top:15rpx;
+ margin-bottom:15rpx;
+ font-family: PingFang SC;
+ font-size:28rpx;
+ color:#353535;
+ text-align: center;
+}

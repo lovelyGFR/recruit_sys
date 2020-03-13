@@ -1,0 +1,20 @@
+<!--pages/introduce/bath/bath.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">澡堂</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  东西区澡堂旁边都有一家理发店，澡堂开放时间为8:00-21:30。要自带拖鞋，自带锁，插卡流水，关了开关而不拔卡，卡里的钱会继续扣，费用是0.01元/秒。澡堂不是单人浴室但也不算大众澡堂，每个花洒一面靠墙，两面有隔板，只剩一面开放，可以自己搭一个帘子。澡堂里不提供吹风机，想要吹干头发出门的可以去澡堂门口的理发店花几块钱吹干。好多新生可能对学校澡堂有意见，羞于在别人面前赤身裸体洗澡，你可以选择去西门对面的师范洗，那里是单人浴室。
+  这里就不给大家导航了，可以在导航首页进行导航。
+      </text>
+</view>

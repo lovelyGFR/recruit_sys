@@ -1,0 +1,28 @@
+<!--pages/introduce/introduce.wxml-->
+
+  <view class="image" style="height: 30vh; width: 100vw">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+        <block wx:for="{{imgUrls}}" wx:key="">
+          <swiper-item>
+            <image src="{{item}}"/>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+
+  <view class="view_title">
+      <text class="title">南门</text>
+      <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+  </view>
+
+  <view class="view_word">
+        <text class="word" space="emsp">  南门为理工大明向校区的正门，也是毕业季学长学姐合照必去的一个地方，南门设有喷泉，南门紧邻大学街，对面为晋中学院，晋中学院内有各类餐馆，小食店，并且食堂饭菜口味不错，素有大学城“御膳房”的美称，晋中学院西区餐厅二层环境很好，并且晚上十点多才关门，支持二维码付款。
+        </text>
+  </view>
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+page{
+    background-color: #F6F6F6;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+/* header */
+.header{
+    height: 358rpx;
+    background-color: #65C2E5;
+}
+/* 空 */
+.header .box1{
+    height: 72rpx;
+}
+/* title */
+.header .title{
+    font-size: 40rpx;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+/* 空 */
+.header .box2{
+    height: 54rpx;
+}
+/* 面试时间 */
+.header .time{
+    font-size: 20rpx;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+/* trunk */
+.trunk{
+    height: 228rpx;
+    position: relative;
+
+}
+/* bigbox */
+.trunk .bigbox{
+    position: absolute;
+    top : -122rpx;
+    left: 20rpx;
+    border-radius: 10rpx;
+    height: 370rpx;
+    width: 710rpx;
+    background-color: #ffffff;
+}
+/* 选择面试时间 */
+.trunk .bigbox .selecttime{
+    margin-top: 28rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24rpx;
+    color: #222222;
+}
+
+.check_date {
+    display: flex;
+    margin-top: 34rpx;
+}
+
+.OTC {
+    margin-left: 35rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #65C2E5;
+    height: 58rpx;
+    width: 125rpx;
+    line-height: 58rpx;
+}
+
+.date {
+    width: 520rpx;
+    height: 58rpx;
+}
+
+.nav {
+    white-space: nowrap;
+}
+
+.nav_panel {
+    display: flex;
+}
+
+.nav_item {
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    flex-shrink: 0;
+    font-size: 30rpx;
+    width: 80rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_border {
+    margin-top: 10rpx;
+    height: 6rpx;
+    border-radius: 6rpx;
+    width: 0;
+    background-color: #65c2e5;
+    transition: width .2s linear;
+}
+
+.item_border.active {
+    width: 30rpx;
+}
+
+.selectbox{
+    margin-top: 38rpx;
+}
+
+.prompt{
+    margin-top: 20rpx;
+    margin-left: 63rpx;
+    font-size: 18rpx;
+    color: #888888;
+}
+.previoustime{
+    margin-top: 25rpx;
+    margin-left: 63rpx;
+    font-size: 18rpx;
+    color: #888888;
+}
+
+
+/* 提示 */
+.txt{
+    margin-top: 40rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20rpx;
+    color: #4783B5;
+}
+/* 重新提交 */
+.button{
+    position: absolute;
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 710rpx;
+    border-radius: 42rpx;
+    bottom: 30rpx;
+    left: 20rpx;
+    background-color:#FFFFFF;
+    font-size: 30rpx;
+    color: #4783B5;
+}
+.button::after{
+    border: none; 
+}
+.button-hover{
+    opacity: 0.9;
+}

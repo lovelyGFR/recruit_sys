@@ -1,0 +1,47 @@
+<view class="main">
+    <!-- header -->
+    <view class="header">
+        <!-- 空 -->
+        <view class="box1">
+
+        </view>
+        <!-- title -->
+        <view class="title">
+            {{aData}}
+        </view>
+        <!-- 空 -->
+        <view class="box2">
+
+        </view>
+        <!-- 提示 -->
+        <view class="prompt">
+            {{bData}}
+        </view>
+    </view>
+    <!-- trunk -->
+    <view class="trunk">
+        <!-- bigbox -->
+        <view class="bigbox">
+            <!-- 面试时间安排 -->
+            <view class="schedule">
+                {{cData}}
+            </view>
+            <!-- 具体时间 -->
+            <view class="time">
+                {{time}}
+            </view>
+            <!-- 日期  星期 -->
+            <view class="date_and_week">
+                <text decode="{{true}}">{{date}}&nbsp;&nbsp;{{week}}</text>
+            </view>
+            <!-- 地点 -->
+            <view class="location">
+                请在时间段内到{{location}}进行签到
+            </view>
+        </view>
+    </view>
+    <!-- 扫码签到 -->
+    <button class="button" hover-class="button-hover" bind:tap="my">生成签到二维码</button>
+    <button class="button1" wx:if="{{status === 2}}">面试已结束</button>
+
+</view>

@@ -1,0 +1,283 @@
+/* pages/myPage/my/my.wxss */
+
+page {
+  background-color: #f6f6f6;
+}
+
+
+
+.super{
+  width: 750rpx;
+  height: 244rpx;
+  /* background-color: #4783B5; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.one{
+  display: flex;
+  flex-direction: column;
+  height: 244rpx;
+  width: 184rpx;
+  justify-content: center;
+  align-items: center;
+}
+.tou{
+  width: 124rpx;
+  height: 124rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.three{
+  width: 244rpx;  
+}
+.txtone{
+  font-size: 40rpx;
+  color : #222222;
+  font-family:PingFang SC;
+  margin-top: 66rpx;
+}
+.txttwo{
+  font-size: 24rpx;
+  color :#888888;
+  margin-top: 26rpx;
+}
+.pict{
+  width: 124rpx;
+  height: 124rpx;
+  border-radius: 10rpx;
+}
+.two{
+  display: flex;
+  flex-direction: column;
+  height: 244rpx;
+  width: 200rpx;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 52rpx;
+  height: 75rpx;
+  width: 253rpx;
+  background-color: #fff;
+  font-size: 30rpx;
+  border-radius: 42rpx;
+  border:2rpx solid #49ADD6;
+  /* border: 1rpx; */
+  /* background-color: red; */
+  /* border-color : #49ADD6; */
+  color :#49ADD6;
+}
+/* .login::after{
+  border: none;
+} */
+
+
+/*头像  更多*/
+
+.topBox {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  width: 750rpx;
+  height: 244rpx;
+}
+
+.avatar {
+  width: 124rpx;
+  height: 124rpx;
+  margin-left: 30rpx;
+  margin-top: 69rpx;
+  border-radius: 10rpx;
+}
+
+.more {
+  margin-top: 110rpx;
+  margin-right: 30rpx;
+  width: 10rpx;
+  height: 18rpx;
+}
+
+.sexLogo {
+  margin-left: 10rpx;
+  width:25rpx;
+  height: 25rpx;
+}
+
+.nameBox {
+  display: block;
+  margin-top: 70rpx;
+  margin-right: 100rpx;
+  width: 400rpx;
+  height: 120rpx;
+}
+
+.name {
+  color: #222;
+  font-size: 40rpx;
+}
+
+.wxNum {
+  margin-top: 30rpx;
+  color: #888;
+  font-size: 24rpx;
+}
+
+/*我的消息*/
+
+.myNewsBox {
+  background-color: #fff;
+  margin-top: 38rpx;
+  font-size: 30rpx;
+  height: 110rpx;
+  overflow: hidden;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.myNews {
+  float: left;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height:110rpx;
+}
+
+
+.myNews_icon {
+  float: left;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30rpx;
+  height:110rpx;
+}
+
+.myNewsIcon {
+  /* margin-left: 30rpx;
+  margin-top: 40rpx; */
+  width: 40rpx;
+  height: 35rpx;
+}
+
+.more1{
+  width: 10rpx;
+  height: 18rpx;
+  margin-top:45rpx;
+  margin-right: 30rpx;
+}
+
+.moreb{
+  width: 10rpx;
+  height: 18rpx;
+  margin-top:45rpx;
+  margin-right: 30rpx;
+}
+
+.imgdot{
+  width:29rpx;
+  height:29rpx;
+  margin-top:25rpx;
+}
+
+
+/*我的二维码*/
+
+.aboutBox {
+  background-color: #fff;
+  margin-top: 38rpx;
+  font-size: 30rpx;
+  height: 110rpx;
+  overflow: hidden;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.about {
+  float: left;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height:110rpx;
+}
+
+.about_icon {
+  float: left;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30rpx;
+  height:110rpx;
+}
+
+.aboutIcon {
+  width: 37rpx;
+  height: 37rpx;
+}
+
+
+
+.share::after{
+  border:none;
+}
+.share{
+  background-color:white;
+  border-radius: 42rpx;
+  color:#4783B5;
+  font-family:PingFang SC;
+  font-size:30rpx;
+  width:690rpx;
+  height:84rpx;
+  margin-bottom:40rpx;
+  text-align: center;
+  line-height:84rpx;
+}
+
+
+.allbox{
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+  justify-content:space-between;
+}
+
+
+/*我的留言板*/
+
+.messagebox {
+  background-color: #fff;
+  border-top: 1px solid #EAEAEA; 
+  font-size: 30rpx;
+  height: 110rpx;
+  overflow: hidden;
+ display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+
+
+.myboard {
+  width: 37rpx;
+  height: 37rpx;
+}
+
+.morec{
+  width: 10rpx;
+  height: 18rpx;
+  margin-top:45rpx;
+  margin-right: 30rpx;
+}
+
+.shareclass{
+  color:white;
+  background-color:#F6F6F6;
+}

@@ -1,0 +1,12 @@
+{
+    "navigationBarBackgroundColor": "#8387F8",
+    "navigationBarTitleText": "报名系统",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+      "infoNature": "/components/row-nature/row-nature",
+      "infoNatureInput": "/components/row-nature/row-nature",
+      "inputModal": "/components/input/input",
+      "c-info": "../../../components/myInfo/myInfo",
+      "c-infoPicker": "../../../components/myInfo_picker/myInfo_picker"
+    }
+}

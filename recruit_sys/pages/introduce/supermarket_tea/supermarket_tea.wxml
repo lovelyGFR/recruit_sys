@@ -1,0 +1,21 @@
+<!--pages/introduce/supermarket_tea/supermarket_tea.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">鲜果爱上茶</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  位于5号宿舍楼北面一层，东区澡堂对面，该奶茶店店内有桌椅，可以与好友或情侣坐在店内享用奶茶，并且可以点一些汉堡，炸鸡块之类的小食，旁边的黑洪堂奶茶店内也有桌椅，并且旁边有一家小吃店。
+      </text>
+</view>
+
+

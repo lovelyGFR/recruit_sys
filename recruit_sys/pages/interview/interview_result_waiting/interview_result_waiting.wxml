@@ -1,0 +1,22 @@
+<view class="main">
+    <!-- 空 -->
+    <view class="box1">
+
+    </view>
+    <!-- 面试审核中 -->
+    <view class="box2">
+        <!-- 图片 -->
+        <view class="smallbox">
+            <image src="https://yun-recruit-new.oss-cn-beijing.aliyuncs.com/images/waiting.png" />
+        </view>
+        <view class="littlebox">
+            面试结果审核中
+        </view>
+    </view>
+    <!-- 预计公布时间 -->
+    <view class="box3">
+        <view class="smallbox3">
+            预计{{time}}公布
+        </view>
+    </view>
+</view>

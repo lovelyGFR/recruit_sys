@@ -1,0 +1,47 @@
+<view class="main">
+    <!-- header -->
+    <view class="header">
+        <!-- 空 -->
+        <view class="box1">
+
+        </view>
+        <!-- title -->
+        <view class="title" wx:if="{{status === 1}}">
+            {{aData}}
+        </view>
+
+        <view class="title1" wx:if="{{status === 2}}">
+            {{a_Data}}
+        </view>
+    </view>
+    <!-- trunk -->
+    <view class="trunk">
+        <!-- bigbox -->
+        <view class="bigbox">
+            <!-- 面试信息 -->
+            <view class="txtbox">
+                <view>
+                    {{bData}}
+                </view>
+                <view>
+                    {{cData}}
+                </view>
+            </view>
+            <view class="infobox">
+                <view class="location">
+                    {{location}}
+                </view>
+                <view class="other_number" wx:if="{{status === 1}}">
+                    {{other_number}}
+                </view>
+                <view class="other_number1" wx:if="{{status === 2}}">
+                    {{my_number}}
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 签到编号 -->
+    <button class="button" wx:if="{{status === 1}}">签到编号:{{my_number}}</button>
+    <!-- 请立即前往教室参加面试 -->
+    <button class="button1" wx:if="{{status === 2}}">请立即前往教室参加面试</button>
+</view>

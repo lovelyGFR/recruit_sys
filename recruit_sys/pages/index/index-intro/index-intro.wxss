@@ -1,0 +1,58 @@
+/* pages/intro/intro.wxss */
+page{
+  background-color: #F6F6F6;
+}
+
+.intro{
+  background-color: white;
+  width:690rpx;
+  max-height:3000rpx;
+  border-radius: 10rpx;
+  margin-left:12rpx;
+  margin-top:15rpx;
+  padding-left:20rpx;
+  padding-right:20rpx;
+  padding-bottom:20rpx;
+}
+
+.introtext1{
+  font-family: PingFang SC;
+  font-size:40rpx;
+  padding-bottom:20rpx;
+  color:#4783B5;
+}
+.introtext2{
+  font-family: PingFang SC;
+  font-size:28rpx;
+  line-height:45rpx;
+  margin-top:15rpx;
+  color:#666666;
+  letter-spacing:3rpx;
+}
+.introtext3{
+  font-family: PingFang SC;
+  font-size:33rpx;
+  color:#4783B5;
+  margin-top:20rpx;
+}
+.goyun{
+  background-color: white;
+  width:725rpx;
+  height:100rpx;
+  border-radius: 10rpx;
+  margin-left:12rpx;
+  margin-top:15rpx;
+  /* text-align: center; */
+  display:flex;
+  flex-direction: column;
+   justify-content:center;
+   align-items:center;
+  line-height: 55rpx;
+  font-family:  PingFang SC;
+  font-size: 28rpx;
+  color:#4783B5;
+}
+.images1{
+  width:700rpx;
+  height:700rpx;
+}

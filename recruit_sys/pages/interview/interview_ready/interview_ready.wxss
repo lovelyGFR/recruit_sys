@@ -1,0 +1,103 @@
+page{
+    background-color: #F6F6F6;
+}
+/* header */
+.header{
+    height: 358rpx;
+    background-color: #65C2E5;
+}
+/* 空 */
+.header .box1{
+    height: 76rpx;
+}
+/* title */
+.header .title{
+    font-size: 40rpx;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+.header .title1{
+    font-size: 40rpx;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+/* trunk */
+.trunk{
+    height: 128rpx;
+    position: relative;
+
+}
+/* bigbox */
+.trunk .bigbox{
+    position: absolute;
+    top : -122rpx;
+    left: 20rpx;
+    border-radius: 10rpx;
+    height: 220rpx;
+    width: 710rpx;
+    background-color: #ffffff;
+}
+/* 面试信息 */
+.trunk .bigbox .txtbox{
+    margin-top: 36rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #222222;
+}
+.trunk .bigbox .infobox{
+    margin-top: 56rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 40rpx;
+}
+.trunk .bigbox .infobox .location{
+    color: #353535;
+}
+.trunk .bigbox .infobox .other_number{
+    color: #4783B5;
+}
+.trunk .bigbox .infobox .other_number1{
+    color: #4783B5;
+}
+
+/* 签到编号 */
+.button{
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 710rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 42rpx;
+    background-color:#FFFFFF;
+    font-size: 30rpx;
+    color: #54AA38;
+}
+.button::after{
+    border: none;
+}
+/* 请立即前往教室参加面试 */
+.button1{
+    line-height: 84rpx;
+    height: 84rpx;
+    width: 710rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 42rpx;
+    background-color:#54AA38;
+    font-size: 30rpx;
+    color: #FFFFFF;
+}
+.button1::after{
+    border: none;
+}

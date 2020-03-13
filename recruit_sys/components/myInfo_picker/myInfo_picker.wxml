@@ -1,0 +1,11 @@
+<view class="row_detail" bindtap='modalinput' hover-class='hover' data-nature="{{nature_name}}">
+  <view class="info">
+    <view wx:if="{{isMust}}" class="section">*</view>{{nature}}
+  </view>
+  <view class="right">
+    <view class="detail">
+      {{value==='null'?'':value}}
+    </view>
+    <image class="moreIcon" src="/images/more.png"></image>
+  </view>
+</view>

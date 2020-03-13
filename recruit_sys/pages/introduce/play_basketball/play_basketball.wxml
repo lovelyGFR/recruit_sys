@@ -1,0 +1,19 @@
+<!--pages/introduce/play_basketball/play_basketball.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">篮球场</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  西区篮球场，靠近西门，这块篮球场被路和楼分割成了三块篮球场地，总共16个框，就在西区澡堂旁边，打完球可以直接去洗澡，这个篮球场离6-14号宿舍楼的同学最近，西区篮球场晚上的灯光相比东区篮球场还是可以的，太理的篮球氛围还是不错的。东区篮球场在西操场的西边，是一排篮球场，12个框。
+      </text>
+</view>

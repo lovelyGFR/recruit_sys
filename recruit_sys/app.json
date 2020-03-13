@@ -1,0 +1,120 @@
+{
+  "pages": [
+  
+    "pages/index/index",
+    "pages/startup/startup",
+    "pages/mine/mine-mine/mine-mine",
+    
+    
+
+    "pages/index/index-newsdetails/index-newsdetails",
+    "pages/index/index-newscenter/index-newscenter",
+    "pages/index/index-intro/index-intro",
+    "pages/index/index-yunding/index-yunding",
+    
+
+
+    "pages/mine/mine-mynews/mine-mynews",
+    "pages/mine/mine-infodetail/mine-infodetail",
+    
+    "pages/mine/mine-myInfo/mine-myInfo",
+    "pages/mine/mine-QRcode/mine-QRcode",
+    "pages/mine/mine-myboard/mine-myboard",
+
+
+
+    "pages/rush/rush_index/rush_index",
+    "pages/rush/rush_details/rush_details",
+    "pages/rush/rush_ticket/rush_ticket",
+
+    
+    "pages/interview/interview_index/interview_index",
+    "pages/interview/modify_interview_time/modify_interview_time",
+    "pages/interview/interview_check_in/interview_check_in",
+    "pages/interview/interview_ready/interview_ready",
+    "pages/interview/interview_result/interview_result",
+    "pages/interview/interview_result_failed/interview_result_failed",
+    "pages/interview/interview_result_success/interview_result_success",
+    "pages/interview/interview_result_waiting/interview_result_waiting",
+    "pages/interview/result/result",
+    
+
+
+
+    "pages/registrationSystem/again/again",
+    "pages/registrationSystem/apply/apply",
+    "pages/registrationSystem/picture_1/picture_1",
+    "pages/registrationSystem/sign_up/sign_up",
+     
+
+
+     "pages/start/start",
+     "pages/tyutguide/tyutguide",
+     "pages/introduce/hx_nan/hx_nan",
+     "pages/introduce/hx_dong/hx_dong",
+     "pages/introduce/hx_xi/hx_xi",
+     "pages/introduce/canteen_dong/canteen_dong",
+     "pages/introduce/yun_shu/yun_shu",
+     "pages/introduce/yun_yi/yun_yi",
+     "pages/introduce/canteen_xi/canteen_xi",
+     "pages/introduce/canteen_bei/canteen_bei",
+     "pages/introduce/dorm/dorm",
+     "pages/introduce/teach/teach",
+     "pages/introduce/hospital/hospital",
+     "pages/introduce/playground/playground",
+     "pages/introduce/library/library",
+     "pages/introduce/college/college",
+     "pages/introduce/send/send",
+     "pages/introduce/bath/bath",
+     "pages/introduce/play/play",
+     "pages/introduce/play_art/play_art",
+     "pages/introduce/play_basketball/play_basketball",
+     "pages/introduce/play_student/play_student",
+     "pages/introduce/play_volleyball/play_volleyball",
+     "pages/introduce/supermarket_dong/supermarket_dong",
+     "pages/introduce/supermarket_xi/supermarket_xi",
+     "pages/introduce/supermarket_eat/supermarket_eat",
+     "pages/introduce/supermarket_tea/supermarket_tea",
+     "pages/introduce/replica/replica",
+     "pages/tyutintro/tyutintro",
+     
+     "pages/map_search/map_search",
+      "pages/search/search",
+      "pages/route/route",
+      "pages/nearby/nearby",
+      "pages/site/site",
+      "pages/detail/detail"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#4783B5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/images/index-active.png",
+        "iconPath": "/images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/user-active.png",
+        "iconPath": "/images/user.png",
+        "pagePath": "pages/mine/mine-mine/mine-mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,12 @@
+<!--components/row-nature/row-nature.wxml-->
+<view class='rowBox' hover-class='hover'>
+  <view class="personInfo">
+    <slot></slot>{{perInfo}}
+  </view>
+  <view class='right'>
+    <view class="detail">{{detail}}</view>
+    <view wx:if="{{more !== 'false'}}">
+      <image class="more" src="{{more}}"></image>
+    </view>
+  </view>
+</view>

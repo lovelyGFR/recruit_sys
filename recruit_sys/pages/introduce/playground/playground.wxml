@@ -1,0 +1,19 @@
+<!--pages/introduce/playground/playground.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">太理操场</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  明向校区有两个操场，按方向分为东西操场，东操场有看台和主席台，军训汇演和运动会开幕式等活动都会在这里，主席台下有器材室和体育老师的办公室，在面向西操场的这一侧还有一个修车店。东西操场中都包含一个足球场，一个400米塑胶跑道，操场内有一些健身器材，也有沙坑
+      </text>
+</view>

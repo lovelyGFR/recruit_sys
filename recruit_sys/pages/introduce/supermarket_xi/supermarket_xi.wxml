@@ -1,0 +1,20 @@
+<!--pages/introduce/supermarket_xi/supermarket_xi.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">西区超市</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  西区超市有北和南两个入口，西区超市支持手机扫码，现金支付，学生卡。东西挺全的，基本能满足日常生活所需。西区超市周围有各类商铺，包括打印店、水果店、文品店、日化店等等。
+ 在今年西区超市在进行整改，所以所有商家都搬到了食堂北边的空地上，搭着白色棚子。西区超市商铺有：资溪烘焙，黑洪堂奶茶店，西区书店，泽瑞超市，唐久便利，平价水果店，大明眼镜，瑾萱日化，中国移动，笔记本电脑维修，打印店。
+      </text>
+</view>

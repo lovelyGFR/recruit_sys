@@ -1,0 +1,22 @@
+<!--pages/introduce/hospital/hospital.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">太理校医院</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  校医室在西区，位于管委会也就是基础学院的一层，要先挂号，后看病，要带学生卡。  医生每天坐校车来回明向，在路上就要浪费两三个小时，医务室背阴无阳光照射，条件比较简陋，药物不太齐全。
+  所以建议大家，小病自己吃药解决，大病去对面中医的医院，或者直接去晋中医院，在这里可以使用医保。医务室就当做给晋中医院写病历的地方吧。
+      </text>
+</view>
+

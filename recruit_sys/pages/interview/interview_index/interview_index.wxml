@@ -1,0 +1,59 @@
+<view class="main">
+    <!-- header -->
+    <view class="header">
+        <!-- 空 -->
+        <view class="box1">
+
+        </view>
+        <!-- title -->
+        <view class="title">
+            {{aData}}
+        </view>
+        <!-- 空 -->
+        <view class="box2">
+
+        </view>
+        <!-- 面试时间 -->
+        <view class="time">
+            <text decode="{{true}}">面试时间&nbsp;:&nbsp;{{bData}}</text>
+        </view>
+    </view>
+    <!-- trunk -->
+    <view class="trunk">
+        <!-- bigbox -->
+        <view class="bigbox">
+            <!-- 选择面试时间 -->
+            <view class="selecttime">
+                {{cData}}
+            </view>
+            <view class="check_date">
+                <view class="OTC">
+                    OCT
+                </view>
+                <view class="date">
+                    <scroll-view class="nav" scroll-x="{{true}}">
+                        <view class="nav_panel">
+                            <view class="nav_item" bindtap="activeNav" data-index="{{index}}" wx:for="{{navList}}"
+                                wx:key="">
+                                <view>{{item}}</view>
+                                <view class="item_border {{index === currentIndexNav?'active':''}}"></view>
+                            </view>
+                        </view>
+                    </scroll-view>
+                </view>
+            </view>
+
+            <!-- 选择框 -->
+            <view class="selectbox">
+                <select bind:time="get_time" multiArray="{{List}}" multiIndex="{{Index}}"></select>
+            </view>
+
+            <!-- 提示 -->
+            <view class="prompt">
+                提示：该时段剩余可选人数{{num}}人次
+            </view>
+        </view>
+    </view>
+    <!-- 提交按钮 -->
+    <button class="button" hover-class="button-hover" bind:tap="push">提交</button>
+</view>

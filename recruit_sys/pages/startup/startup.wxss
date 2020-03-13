@@ -1,0 +1,69 @@
+/* 整个页面 */
+.main{
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bigbody{
+  height: 862rpx;
+}
+.boxone{
+  height: 62rpx;
+}
+.ban{
+  height: 477rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ban image{
+  height: 477rpx;
+  width: 687rpx;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 201rpx;
+}
+.logo image{
+  width: 122rpx;
+  height: 117rpx;
+}
+.text{
+  margin-top : 20rpx;
+}
+.textone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color : #030310;
+}
+.texttwo{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color : #989898;
+}
+.footer{
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .button{
+  width: 600rpx;
+  height: 100rpx;
+  background-color: #65C2E5;
+  font-size: 36rpx;
+  color : #FFFFFF;
+  border-radius: 100rpx;
+}

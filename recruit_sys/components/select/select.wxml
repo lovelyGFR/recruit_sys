@@ -1,0 +1,18 @@
+<!-- 下拉菜单 -->
+<picker bindchange="bindPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class='selectbox'>
+        <view class="content">
+            <view class='time'>
+                {{multiArray[multiIndex]}}
+            </view>
+            <view class="icon">
+                <image src='../../images/more1.png'></image>
+            </view>
+        </view>
+    </view>
+ </picker>
+ 
+
+
+
+

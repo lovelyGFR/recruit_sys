@@ -1,0 +1,120 @@
+/* pages/again/again.wxss */
+page{
+  height:  100%;
+  width:  100%;
+   background-color:  #F6F6F6;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.div_f{
+  height:  975rpx;
+  width:  750rpx;
+  background-color:  #F6F6F6;
+}
+.div_1{
+  width:  750rpx;
+  height:  358rpx;
+  background-color:  #8387F8;
+  display:  flex;
+  flex-direction:  column;
+  align-items:  center;
+}
+
+.div_2{
+  height:  50rpx;
+  background-color:  #8387F8;
+}
+
+.text_1{
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  color: #FFFFFF;
+  width:  750rpx;
+  font-family:  PingFang SC;
+  font-size:  40rpx;
+}
+
+.div_3{
+  height: 80rpx;
+  background-color:  #8387F8;
+}
+
+.text_2{
+  font-size:  20rpx;
+  color:  #FFFFFF;
+
+}
+ 
+.div_4{
+  width: 710rpx;
+  height: 712rpx;
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+  display:  flex;
+  margin-top: -122rpx;
+  margin-left: 22rpx;
+  box-shadow: 0 0 10rpx #F6F6F6;
+   justify-content:  space-around;
+  flex-direction:  column;
+  align-items:  center;
+}
+
+
+.point_out{
+  color:  #54AA38;
+  font-size:  30rpx;
+}
+
+.success{
+  height:  132rpx;
+  width:  127rpx;
+}
+
+.lastWord{
+  font-size:  24rpx;
+  text-align:  center
+}
+
+.div_s{
+  margin-bottom: 50rpx;
+  display:  flex;
+  flex-direction:  column;
+  align-items:  center;
+}
+
+.button_1::after{
+  border:  none;
+}
+
+.button_1{
+   width:  710rpx;
+  height:  84rpx;
+  border-radius:  40rpx;
+  background-color:  #FFFFFF;
+  line-height:  84rpx;
+  color:  #4783B5;
+  font-size:  30rpx;
+    font-family:  PingFang SC;
+}
+
+.div_5{
+  height: 31rpx;
+  width:  750rpx;
+}
+
+.button_2::after{
+  border:  none;
+}
+
+.button_2{
+  width:  710rpx;
+  height:  84rpx;
+  border-radius:  40rpx;
+  background-color:  #FFFFFF;
+  line-height:  84rpx;
+  color:  #4783B5;
+  font-size:  30rpx;
+    font-family:  PingFang SC;
+}

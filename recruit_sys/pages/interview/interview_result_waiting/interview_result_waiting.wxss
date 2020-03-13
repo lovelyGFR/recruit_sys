@@ -1,0 +1,47 @@
+page{
+    background-color: #F6F6F6;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 空 */
+.box1{
+    height: 92rpx;
+}
+/* 面试审核中 */
+.box2{
+    height: 262rpx;
+    position: relative;
+}
+/* 图片 */
+.box2 .smallbox{
+    position: absolute;
+    left: 303rpx;
+    top: -107rpx;
+}
+.box2 .smallbox image{
+    height: 192rpx;
+    width: 144rpx;
+}
+/* 文字 */
+.box2 .littlebox{
+    position: absolute;
+    left: 276rpx;
+    top: 100rpx;
+    font-size: 30rpx;
+    color: #7E8388;
+}
+/* 预计公布时间 */
+.box3{
+    height: 92rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    color: #7E8388;
+}

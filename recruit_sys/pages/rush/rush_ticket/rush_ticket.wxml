@@ -1,0 +1,61 @@
+<view>
+    <!--  云顶书院19届招生宣讲会  -->
+    <view class="welcome">
+        <view class="txt">
+            云顶书院19届招生宣讲会
+        </view>
+    </view>
+    <!-- ticket -->
+    <view class="ticket">
+        <!-- 头像 -->
+        <view class="avatar">
+            <image src="{{avatar}}" />
+        </view>
+        <!-- 空 -->
+        <view class="box1">
+
+        </view>
+        <!-- 学号 -->
+        <view class="studentID">
+            {{studentID}}
+        </view>
+        <!-- 二维码盒子 -->
+        <view class="box2">
+            <view class="border">
+                <image mode="aspectFit" src="{{QR}}" />
+            </view>
+        </view>
+        <!-- 票号 -->
+        <view class="NUM">
+            NO.{{NUM}}
+        </view>
+        <!-- 左圆角 -->
+        <view class="circle_left">
+
+        </view>
+        <!-- 右圆角 -->
+        <view class="circle_right">
+            
+        </view>
+        <!-- 空 -->
+        <view class="box3">
+
+        </view>
+        <!-- 票上宣讲会的具体信息 -->
+        <view class="info">
+            <view class="info_session">
+                场次 : {{info_session}}
+            </view>
+            <view class="info_time">
+                时间 : {{info_time}}
+            </view>
+            <view class="info_location">
+                地点 : {{info_location}}
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 注意事项 -->
+<view class="footer">
+    请提前10分钟扫码签到入场
+</view>

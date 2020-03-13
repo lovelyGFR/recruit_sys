@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "college" : "../../../components/ticket_info1/ticket_info1",
+    "scanf" : "../../../components/scanf/scanf",
+    "scanf1" : "../../../components/scanf1/scanf1"
+  },
+  "navigationBarTitleText": "抢票系统"
+}

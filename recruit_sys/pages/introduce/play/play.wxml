@@ -1,0 +1,19 @@
+<!--pages/introduce/play/play.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">网球场/手球场</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  网球场和手球场在一起，在西操场的北面。网球场内共有6个网。体育选修课网球和手球就在这里上课。
+      </text>
+</view>

@@ -1,0 +1,66 @@
+<view class="includefour">
+  <view class="txt">此信息与报名信息保持一致</view>
+  <view class="includethree">
+
+    <view class="topBox">
+
+      <view class="row_detail">
+        <view class="info">头像</view>
+        <view class="right">
+          <image class="avatar" src="{{userInfo.user_avatar}}"></image>
+          <!-- <image class="moreIcon" src="/images/more.png"></image> -->
+        </view>
+      </view>
+      <c-info bind:change="getData" nature="微信昵称" flag="{{true}}" value="{{userInfo.user_vxName}}"></c-info>
+      <picker bindchange="bindPickerChange" range="{{array}}">
+        <c-infoPicker nature="性别" nature_name="sex" value="{{userInfo.user_sex}}"></c-infoPicker>
+      </picker>
+    </view>
+
+    <view class="mediubBox">
+      <c-info bind:change="getData" nature="姓名" value="{{userInfo.user_name}}" nature_name="user_name"
+        maxlength="{{4}}"></c-info>
+
+      <picker mode="date" start="1995-09-01" end="2019-09-01" bindchange="bindDateChange">
+        <c-infoPicker nature="生日"
+          value="{{userInfo.user_birthday==null||userInfo.user_birthday=='null' ? '':userInfo.user_birthday}}"
+          nature_name="user_birthday"></c-infoPicker>
+      </picker>
+
+      <c-info bind:change="getData" nature="手机号"
+        value="{{userInfo.user_phoneNumber==null||userInfo.user_phoneNumber=='null'?'':userInfo.user_phoneNumber}}"
+        nature_name="user_phoneNumber">
+      </c-info>
+      <c-info bind:change="getData" nature="QQ号"
+        value="{{userInfo.user_qqNumber==null||userInfo.user_qqNumber=='null'?'':userInfo.user_qqNumber}}"
+        nature_name="user_qqNumber">
+      </c-info>
+      <c-info bind:change="getData" nature="邮箱"
+        value="{{userInfo.user_email==null||userInfo.user_email=='null'?'':userInfo.user_email}}"
+        nature_name="user_email" isMust="{{false}}"></c-info>
+    </view>
+
+    <view class="bottomBox">
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange"
+        value="{{multiIndex}}" range="{{multiArray}}">
+        <c-infoPicker nature="学院专业"
+          value="{{userInfo.user_college==null||userInfo.user_college=='null'?'':userInfo.user_college}}{{userInfo.user_major==null||userInfo.user_major=='null'?'':','}}{{userInfo.user_major==null||userInfo.user_major=='null'?'':userInfo.user_major}}">
+        </c-infoPicker>
+      </picker>
+
+
+      <c-info bind:change="getData" nature="班级"
+        value="{{userInfo.user_class==null||userInfo.user_class=='null'?'':userInfo.user_class}}"
+        nature_name="user_class"></c-info>
+      <c-info bind:change="getData" nature="楼宿舍" tishi="x号楼xxx"
+        value="{{userInfo.user_dorm==null||userInfo.user_dorm=='null'?'':userInfo.user_dorm}}" nature_name="user_dorm">
+      </c-info>
+      <c-info bind:change="getData" nature="学号"
+        value="{{userInfo.user_studentId==null||userInfo.user_studentId=='null'?'':userInfo.user_studentId}}"
+        nature_name="user_studentId">
+      </c-info>
+    </view>
+  </view>
+
+  <button class="submit" bindtap="submit" hover-class="hover">保存</button>
+</view>

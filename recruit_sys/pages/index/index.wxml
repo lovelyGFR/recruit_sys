@@ -1,0 +1,112 @@
+
+<!-- 第一部分  轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+  circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="">
+    <swiper-item>
+      <view>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill" data-index="{{index}}" bindtap="swiper"></image>
+      </view>
+      <!-- <image src="{{item}}" /> -->
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 第二部分  功能部分 -->
+<view class="bigpart">
+  <!-- <view class="bigpart1"> -->
+
+
+  <view class="ticket" hover-class="abc" bind:tap="btnclick1">
+    <image src="{{rush}}" class="ticket1"></image>
+    <text class="ticket2">抢票系统</text>
+  </view>
+
+  <view class="apply" hover-class="abc" bindtap="btnclick2">
+    <image src="{{signUp}}" class="apply1"></image>
+    <text class="apply2">报名系统</text>
+  </view>
+
+  <view class="seeface" hover-class="abc" bindtap="btnclick3">
+    <image src="{{interview}}" class="seeface1"></image>
+    <text class="seeface2">面试系统 </text>
+  </view>
+
+  <view class="map" hover-class="abc" bindtap="btnclick4">
+    <image src="{{navigation}}" class="map1"></image>
+    <text class="map2">太理导航</text>
+  </view>
+
+  <!-- </view> -->
+</view>
+
+<!-- 第三部分 书院简介 -->
+
+<view class="introduction">
+
+  <view class="SMALLS">
+
+    <view class="smallbox">
+      <text class="smallbox1">书院简介</text>
+    </view>
+
+    <navigator hover-class="none" class="jumpto" url="/pages/index/index-intro/index-intro">
+      <text class="jumpto1">更多</text>
+      <image class="jumpto2" src="/images/more.png"></image>
+    </navigator>
+
+  </view>
+
+  <navigator class="bigboxx" url="/pages/index/index-intro/index-intro">{{introductionpart}}</navigator>
+
+</view>
+
+<!-- 第四部分 书院新闻 -->
+
+<view class="yunnews">
+
+  <view class="SMALLS2">
+
+    <view class="smallbox2">
+      <text class="smallbox21">书院新闻</text>
+    </view>
+
+    <navigator hover-class="none" class="jump" url="/pages/index/index-newscenter/index-newscenter">
+      <text class="jump1">新闻中心</text>
+      <image class="jump2" src="/images/more.png"></image>
+    </navigator>
+
+  </view>
+
+  <view class="bigbox">
+    <view class='list' wx:for="{{list}}" wx:key="" bindtap="go_detail" data-news_title="{{item.news_title}}"
+      data-news_author="{{item.news_author}}" data-content="{{item.news_content}}" data-time="{{item.time}}"
+      data-img="{{item.img}}">
+      <!-- <navigator class='item' url="/pages/index/index-newsdetails/index-newsdetails?nstt={{item.idd}}" wx:for="{{list}}" wx:key="idd"> -->
+      <view class="wordsss">
+        <view class="wordss">
+          <text class="newstitle1"> {{item.news_title}}</text>
+          <view class="words">
+            <text class="newstime"> {{item.time}}</text>
+            <text class="newsauthor"> by{{item.news_author}}</text>
+          </view>
+        </view>
+        <image class="newsimages" src="  {{item.img}}"></image>
+      </view>
+      <!-- </navigator> -->
+    </view>
+
+    <!-- 上拉加载 -->
+    <!-- <view wx:if="{{showicon}}"> <p-loading /> </view>
+   <view wx:elif="{{showicon}}==false"> 加载完毕 </view> -->
+  </view>
+  <!-- 上拉加载 -->
+  <view wx:if="{{showicon}}">
+    <p-loading />
+  </view>
+  <view wx:elif="{{showicon}}==false" class="donetext"> 米有啦！已经到底啦！ </view>
+</view>
+
+<mp-dialog title="提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>请先登录之后再进入哦</view>
+</mp-dialog>

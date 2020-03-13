@@ -1,0 +1,86 @@
+<view class='Box'>
+     <view class='div_1'>
+          <view class='div_2'></view>
+          <text class='text_1'>振翅云顶之上，极目星辰大海</text>
+          <view class='div_3'></view>
+          <text class='text_2'>云顶书院报名截止日期为2019.09.30</text>
+     </view>
+     <view class='div_4'>
+          <text class='text_3'>报名方向</text>
+
+          <picker class='chooseDirection' bindchange='pickerChangeDirection' value='' range='{{directionArr}}'
+               name='user_direction'>
+               <view class='direction'>
+                    <view class="picker">
+                         {{userInfo.user_direction==null?directionArr[0]:userInfo.user_direction}}
+                    </view>
+                    <view class="jiantou">
+                         <view class='bug1'>
+                              <image class='more1' src='/images/more1.png'></image>
+                         </view>
+                    </view>
+               </view>
+          </picker>
+
+
+     </view>
+</view>
+<view class='bigBox'>
+     <view class='Box_1'>
+          <view class='avatarBox'>
+               <view class='l-avatar'>头像</view>
+               <view class='r-avatar'>
+                    <view class='bug'>
+                         <image class='avatar' src='{{userInfo.user_avatar}}' mode="aspecFill"
+                              detail="{{userInfo.user_avatar}}"></image>
+                    </view>
+               </view>
+          </view>
+          <infoNature perInfo='微信昵称' detail="{{userInfo.user_vxName}}" value='{{userInfo.user_vxName}}'
+               name="user_vxName" more="false"></infoNature>
+          <picker bindchange="bindPickerChange" range="{{array}}" name='user_sex' value="{{array[index2]}}">
+               <infoNature perInfo='性别' detail="{{userInfo.user_sex}}"></infoNature>
+          </picker>
+     </view>
+     <view class='Box_2'>
+          <c-info bind:change="getData" nature="姓名" value="{{userInfo.user_name}}" nature_name="user_name"
+               maxlength="{{4}}"></c-info>
+          <picker mode="date" start="1995-09-01" end="2019-09-01" bindchange="bindDateChange">
+               <c-infoPicker nature="生日"
+                    value="{{userInfo.user_birthday==null||userInfo.user_birthday=='null' ? '':userInfo.user_birthday}}"
+                    nature_name="user_birthday"></c-infoPicker>
+          </picker>
+          <c-info bind:change="getData" nature="手机号"
+               value="{{userInfo.user_phoneNumber==null||userInfo.user_phoneNumber=='null'?'':userInfo.user_phoneNumber}}"
+               nature_name="user_phoneNumber"></c-info>
+          <c-info bind:change="getData" nature="QQ号"
+               value="{{userInfo.user_qqNumber==null||userInfo.user_qqNumber=='null'?'':userInfo.user_qqNumber}}"
+               nature_name="user_qqNumber">
+          </c-info>
+          <c-info bind:change="getData" nature="邮箱"
+               value="{{userInfo.user_email==null||userInfo.user_email=='null'?'':userInfo.user_email}}"
+               nature_name="user_email" isMust="{{false}}"></c-info>
+     </view>
+     <view class='Box_3'>
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange"
+               value="{{multiIndex}}" range="{{multiArray}}">
+               <c-infoPicker nature="学院专业"
+                    value="{{userInfo.user_college==null||userInfo.user_college=='null'?'':userInfo.user_college}}{{userInfo.user_major==null||userInfo.user_major=='null'?'':','}}{{userInfo.user_major==null||userInfo.user_major=='null'?'':userInfo.user_major}}">
+               </c-infoPicker>
+          </picker>
+          <c-info bind:change="getData" nature="班级"
+               value="{{userInfo.user_class==null||userInfo.user_class=='null'?'':userInfo.user_class}}"
+               nature_name="user_class"></c-info>
+          <c-info bind:change="getData" nature="楼宿舍" tishi="x号楼xxx"
+               value="{{userInfo.user_dorm==null||userInfo.user_dorm=='null'?'':userInfo.user_dorm}}"
+               nature_name="user_dorm" ></c-info>
+          <c-info bind:change="getData" nature="学号"
+               value="{{userInfo.user_studentId==null||userInfo.user_studentId=='null'?'':userInfo.user_studentId}}"
+               nature_name="user_studentId">
+          </c-info>
+     </view>
+</view>
+<!-- 保名按钮 -->
+<view class='saveBox'>
+     <button class='button' hover-class='buttonHover' bindtap='goToApply'>报名</button>
+</view>

@@ -1,0 +1,16 @@
+<view class="superbox1">
+    <!-- 图片 -->
+    <view class="box1">
+        <image src="https://yun-recruit-new.oss-cn-beijing.aliyuncs.com/images/failed.png" />
+    </view>
+    <!-- 面试失败 -->
+    <view class="box2">
+        面试失败
+    </view>
+    <view class="txt" >
+    <text decode="{{true}}">
+     &nbsp;&nbsp;&nbsp;&nbsp;同学你好，非常遗憾地通知你未能通过云顶书院的A轮面试。你本人非常优秀，只是通过面试，有些地方略微不符合我们的要求。希望你不要难过，如果你对面试表现不满意的话，我们还设置有B轮面试，你可以继续报名参加。无论最终结果如何，我们都希望你坚持本心，相信“海阔凭鱼跃，天高任鸟飞”，在自己热爱的道路上不断前行。    
+    </text>
+   
+    </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/introduce/yun_yi/yun_yi.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">云顶书院-逸庐基地</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  云顶书院-逸庐基地位于艺术学院一层，被黄河新闻网报道过。云顶逸庐是依托绘画、工艺美术、环境设计、视觉传达设计、数字媒体艺术专业与数据科学与技术等新工科专业协作共建的工作坊集群。平台以工作坊为实施主体，以项目形式具体落实，鼓励师生承接研发企业行业需求的项目课题，将教学实践、工作室创意作品，结合市场需求不断优化，按照商业模式进一步产品化，催生具有社会影响力、企业竞争力的文创产品，积极促进以智慧密集、知识密集、高附加值、高科技手段、低能耗等为优势的文创小微企业孵化。
+      </text>
+</view>

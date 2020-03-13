@@ -1,0 +1,21 @@
+<!--pages/introduce/canteen_bei/canteen_bei.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">北餐厅</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  北餐厅又名宁馨轩，一共有三层，二层和三层通过一层电梯可以上去，但平时二层和三层不开。一层的菜有很多都是山西之外的菜系，同学们可以过来瞅瞅，看看有没有自己家乡的菜。不过北餐厅今年上半年都没有开门，不知道开学会不会开门。
+  北区食堂开放时间为6:30-8:30；11:30-1:30；5:00-8:30，每个楼层都有电视，一台微波炉，一桶免费汤、一桶开水，吃完后把餐具放在餐具回收处，剩饭倒入洞里。食堂一层有饭卡充值处，不太好找，建议在网上充值：下载中国建设银行APP->悦生活->生活缴费->IC卡、联名卡充值->缴费单位选择太原理工大学校园卡(充值),校验身份信息为你的身份证号。
+      </text>
+</view>

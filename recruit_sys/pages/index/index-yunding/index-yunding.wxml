@@ -1,0 +1,4 @@
+<!--pages/index/index-yunding/index-yunding.wxml-->
+ <view>      
+  <web-view src='https://yundingshuyuan.com'></web-view>    
+  </view>

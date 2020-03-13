@@ -1,0 +1,149 @@
+/* pages/rush/rush_ticket/rush_ticket.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#49ADD6, #7A94ED);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  
+}
+/* 云顶书院19届招生宣讲会 */
+.welcome{
+  height: 244rpx;
+  width: 750rpx;
+}
+.welcome .txt{
+  display: flex;
+  flex-direction: row;
+  justify-content : center;
+  padding-top: 60rpx;
+  color: #FFFFFF;
+  font-size: 40rpx;
+}
+/* ticket */
+.ticket{
+  position: relative;
+  height: 874rpx;
+  width: 710rpx;
+  border-radius: 12rpx;
+  background-color: #fff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+/* 头像 */
+.ticket .avatar{
+  position: absolute;
+  left: 293rpx;
+  top: -62rpx;
+  width: 124rpx;
+  height: 124rpx;
+  
+}
+.ticket .avatar image{
+  width: 124rpx;
+  height: 124rpx;
+  border-radius : 50%;
+}
+/* 空 */
+.ticket .box1{
+  height: 90rpx;
+}
+/* 学号 */
+.ticket .studentID{
+  height: 130rpx;
+  color: #4783B5;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items : center;
+}
+/* 二维码盒子 */
+.ticket .box2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 300rpx;
+}
+.ticket .box2 .border{
+  height: 298rpx;
+  width: 298rpx;
+  border : 1rpx solid #E5E5E5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ticket .box2 .border image{
+  width: 296rpx;
+  height: 296rpx;
+}
+/* 票号 */
+.ticket .NUM{
+  height: 102rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items : center;
+  font-size: 24rpx;
+  color :#7E8388
+}
+/* 左圆角 */
+.ticket .circle_left{
+  position: absolute;
+  left: 0;
+  width: 15rpx;
+  height: 30rpx;
+  border-radius: 0 15rpx 15rpx 0;
+  background-color: #6D9AE7;
+  /* background: linear-gradient(#7BA2E6, #6D9AE7); */
+}
+/* 右圆角 */
+.ticket .circle_right{
+  position: absolute;
+  left: 696rpx;
+  width: 15rpx;
+  height: 30rpx;
+  border-radius: 15rpx 0 0 15rpx;
+  background-color: #6D9AE7;
+  /* background: linear-gradient(#7BA2E6, #6D9AE7); */
+}
+/* 空 */
+.ticket .box3{
+  height: 44rpx;
+  margin: 15rpx 30rpx 0 30rpx;
+  /* background-color: red; */
+  border-top: 1rpx dashed #49ADD6;
+}
+/* 票上宣讲会的具体信息 */
+.ticket .info{
+  height: 174rpx;
+  margin: 0rpx 30rpx 25rpx 30rpx;
+}
+.ticket .info .info_session{
+  color: #7E8388;
+  font-size: 24rpx;
+  margin-bottom: 25rpx;
+}
+.ticket .info .info_time{
+  color: #7E8388;
+  font-size: 24rpx;
+  margin-bottom: 25rpx;
+}
+.ticket .info .info_location{
+  color: #7E8388;
+  font-size: 24rpx;
+  /* margin-bottom: 25rpx; */
+}
+/* 注意事项 */
+.footer{
+  height: 88rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20rpx;
+}

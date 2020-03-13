@@ -1,0 +1,157 @@
+/* pages/result/result.wxss */
+page {
+  background: linear-gradient(#49ADD6, #7A94ED);
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.box_1 {
+  height: 178rpx;
+  width: 750rpx;
+}
+
+.word {
+  width: 240rpx;
+  height: 32rpx;
+  z-index: 2;
+  position: absolute;
+  top: 52rpx;
+  left: 266rpx;
+}
+
+.top {
+  height: 240rpx;
+  width: 750rpx;
+  position: absolute;
+}
+
+.top_1 {
+  height: 198rpx;
+  width: 392rpx;
+  position: absolute;
+  z-index: 2;
+  left: 355rpx;
+
+}
+
+.log {
+  height: 86rpx;
+  width: 88rpx;
+  z-index: 2;
+  position: absolute;
+  top: 30rpx;
+}
+
+.box_2 {
+  height: 86rpx;
+  width: 750rpx;
+  margin-left: 39rpx;
+}
+
+.text {
+  height: 95rpx;
+  width: 438rpx;
+  margin-left: 160rpx;
+
+}
+
+.bos_3 {
+  width: 750rpx;
+  height: 95rpx;
+}
+
+.row {
+  width: 710rpx;
+  height: 70rpx;
+  position: absolute;
+  left: 20rpx;
+}
+
+.box_4 {
+  width: 750rpx;
+  height: 120rpx;
+
+}
+
+.success_1 {
+
+  width: 750rpx;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.success {
+
+  color: rgba(248, 246, 246, 0.6);
+  font-size: 30rpx;
+  margin: 0 auto;
+
+}
+
+.box_5 {
+  width: 710rpx;
+  height: 800rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin-left: 22rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box_end {
+  width: 750rpx;
+  height: 270rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.avator {
+  width: 124rpx;
+  height: 124rpx;
+  border-radius: 62rpx;
+  line-height: 124rpx;
+}
+
+.lastWord {
+  width: 216rpx;
+  height: 114rpx;
+  font-size: 25rpx;
+}
+
+.SmallProgramCode {
+  height: 174rpx;
+  width: 174rpx;
+}
+
+.box_6 {
+  width: 750rpx;
+}
+
+.endWord {
+  width: 304rpx;
+  height: 27rpx;
+  margin-left: 216rpx;
+  margin-top: 32rpx;
+}
+
+.encourge {
+  line-height: 60rpx;
+  height: 474rpx;
+  width: 610rpx;
+  color: #7E8388;
+  font-size: 30rpx;
+}
+
+.name {
+  width: 610rpx;
+  font-size: 36rpx;
+  color: #7E8388;
+  margin: 20rpx auto
+}

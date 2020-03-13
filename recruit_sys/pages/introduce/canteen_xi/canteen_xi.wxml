@@ -1,0 +1,22 @@
+<!--pages/introduce/canteen_xi/canteen_xi.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">西餐厅</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  西餐厅又名静雅轩，一共有五层，一层为超市，并且超市周围有很多商铺，二到五层为食堂，我就不推荐大家吃啥了，大家作为新生，我推荐都尝一尝，找到自己最喜欢吃的，西区餐厅五层有个西餐厅，自助点餐，环境很不错，挺安静的，点上一杯奶茶也是可以坐在里面的沙发上学习的，五层还有个自助火锅，还有一个麻辣香锅店，味道都还行，但是不能刷学生卡，需要手机扫码支付。
+  西区食堂开放时间为6:30-8:30；11:30-1:30；5:00-8:30，除了五楼每个楼层都有电视，一台微波炉，一桶免费汤、一桶开水，吃完后把餐具放在餐具回收处，剩饭倒入洞里。食堂一层有饭卡充值处，不太好找，建议在网上充值：下载中国建设银行APP->悦生活->生活缴费->IC卡、联名卡充值->缴费单位选择太原理工大学校园卡(充值),校验身份信息为你的身份证号。
+      </text>
+</view>
+

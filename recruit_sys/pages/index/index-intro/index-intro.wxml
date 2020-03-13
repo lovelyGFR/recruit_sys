@@ -1,0 +1,120 @@
+<!--pages/intro/intro.wxml-->
+
+<view class="intro" wx:for="{{introlist}}" wx:key="">
+    <!-- 大标题 -->
+    <text class="introtext1">
+        {{item.title}}
+    </text>
+    <!-- 大内容 -->
+    <view class="introtext2">
+        {{item.content}}
+
+    <!-- 分支标题及内容 -->
+      <view class="introtext3">
+         {{item.title1}}
+          </view>
+       <view class="introtext4">
+         {{item.content1}}
+         </view>
+  
+      <view class="introtext3">
+         {{item.title2}}
+          </view>
+       <view class="introtext4">
+         {{item.content2}}
+         </view>
+
+       <view class="introtext3">
+         {{item.title3}}
+          </view>
+        <view class="introtext4">
+         {{item.content3}}
+         </view>
+
+       <view class="introtext3">
+         {{item.title4}}
+          </view>
+        <view class="introtext4">
+         {{item.content4}}
+         </view>
+
+       <view class="introtext3">
+         {{item.title5}}
+          </view>
+        <view class="introtext4">
+         {{item.content5}}
+         </view>
+
+    </view>
+</view>
+
+<!-- 团队文化 -->
+<view class="intro" wx:for="{{introlist1}}" wx:key="">
+    <!-- 大标题 -->
+    <text class="introtext1">
+        {{item.title}}
+    </text>
+
+      <!-- 分支标题内容 -->
+       <view class="introtext3">
+         {{item.title1}}
+          </view>
+       <view class="introtext2">
+         {{item.content1}}
+         </view>
+         <image class="images1" src="/images/yunding12.jpg"></image>
+  
+      <view class="introtext3">
+         {{item.title2}}
+          </view>
+       <view class="introtext2">
+         {{item.content2}}
+         </view>
+
+       <view class="introtext3">
+         {{item.title3}}
+          </view>
+        <view class="introtext2">
+         {{item.content3}}
+         </view>
+
+       <view class="introtext3">
+         {{item.title4}}
+          </view>
+        <view class="introtext2">
+         {{item.content4}}
+         </view>
+
+</view>
+
+
+<!-- 团队荣誉 -->
+<view class="intro" wx:for="{{introlist2}}" wx:key="">
+    <!-- 大标题 -->
+    <text class="introtext1">
+        {{item.title}}
+    </text>
+      <!-- 分支标题及内容 -->
+       <view class="introtext2">
+         {{item.content1}}
+         </view>
+       <view class="introtext2">
+         {{item.content2}}
+         </view>
+        <view class="introtext2">
+         {{item.content3}}
+         </view>
+        <view class="introtext2">
+         {{item.content4}}
+         </view>
+        <view class="introtext2">
+         {{item.content5}}
+         </view>
+          <view class="introtext2">
+         {{item.content6}}
+         </view>
+
+
+    </view>
+
+    <view class="goyun" bindtap="goToYunding" ><view>点击此处跳转云顶书院官网 </view><view> 电脑使用效果更佳哦~ 网址：yundingshuyuan.com</view></view>

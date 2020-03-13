@@ -1,0 +1,30 @@
+<view class="home">
+    <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+</view>
+
+<view class="ripple" style="{{rippleStyle}}"></view>
+<view class='tyut_bg' bindtouchstart="containerTap"> 
+    <image src = "https://yun-recruit-new.oss-cn-beijing.aliyuncs.com/images/tyut.png" class='tyut' ></image>  
+</view>
+
+<!--logo-->
+<view class='logo'>
+      <image class="tyut_logo" src='/images/tyut_log.png'></image>
+</view>
+
+<!--太理简介-->
+<view class='tyut_intro' bindtouchstart="containerTap" >
+  <image class="circle2" src="/images/circle.png" hover-class="hover"></image>
+  <navigator class='_tyut_intro' open-type='navigate' url='../tyutintro/tyutintro' animation="{{animationData}}">
+      <view>太 理</view>
+      <view>简 介</view>
+  </navigator>
+</view>
+<!--逛逛太理-->
+<view class='tyut_go' bindtouchstart="containerTap" >
+  <image class="circle1" src="/images/circle.png" hover-class="hover"></image>
+  <navigator class='_tyut_go' open-type='navigate' url='../tyutguide/tyutguide' animation="{{animationData}}">
+      <view>逛 逛</view>
+      <view>太 理 </view>
+  </navigator>
+</view>

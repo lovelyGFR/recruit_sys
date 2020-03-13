@@ -1,0 +1,64 @@
+<!-- 全局 -->
+<view class="bigbox">
+    <!-- 大盒子1 -->
+    <view class="flexbox1">
+        <view class="superbox1">
+            <!-- 空 -->
+            <view class="box1">
+
+            </view>
+            <!-- 面试通过的图片 -->
+            <view class="pass">
+                <image src="https://yun-recruit-new.oss-cn-beijing.aliyuncs.com/images/pass.png" />
+            </view>
+            <!-- 面试通过 -->
+            <view class="txt1">
+                面试通过
+            </view>
+            <!-- 空 -->
+            <view class="box2">
+
+            </view>
+            <!-- 头像 -->
+            <view class="avatar">
+                <image src="{{avatar}}" />
+            </view>
+            <!-- 恭喜通过 -->
+            <view class="txt2">
+                恭喜{{name}}同学通过云顶书院的面试
+            </view>
+            <view class="txt9">
+                请尽快加群
+            </view>
+        </view>
+    </view>
+    <!-- 大盒子2 -->
+    <view class="flexbox2">
+        <!-- 点击生成图片 -->
+        <view class="share">
+            <button class="button" hover-class="button-hover" bindtap="result">生成分享图片</button>
+        </view>
+        <!-- 最下面的文字 -->
+        <view class="click_copy">
+            <view class="leftinfo">
+                <view class="txt3">
+                    面试通过的同学加
+                </view>
+                <view class="txt4">
+                    <text decode="{{true}}">qq群&nbsp;:&nbsp;</text>
+                </view>
+                <view class="group_number">
+                    <text decode="{{true}}">{{group_number}}&nbsp;&nbsp;&nbsp;&nbsp;</text>
+                </view>
+                <view class="txt5">
+                    请勿外传群号
+                </view>
+            </view>
+            <!-- 点击复制群号 -->
+            <view class="copy" bindtap="copy">
+                点此复制群号
+            </view>
+        </view>
+    </view>
+
+</view>

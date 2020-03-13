@@ -1,0 +1,21 @@
+<!--pages/introduce/play_art/play_art.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">健身房/舞蹈教室</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  健身房在艺术学院西边的一个“盆地”里，档次没有很高，但是比较便宜，要求高的同学可以去不远处万科办健身卡。同学们准备办健身年卡的时候一定要考虑清楚，不要脑子一热就拿着钱去办，每年花钱办年卡但是就去两三次的人不在少数，所以经常会出现低价转让健身房年卡，所以同学们做决定之前一定要三思啊。
+  舞蹈教室在艺术学院东边的一个“盆地”里，相当于地下一层教室，体育选课交际舞，瑜伽，健美操，拉丁舞等会在这里上课。
+  详细位置会在导航里给大家导航的。
+      </text>
+</view>

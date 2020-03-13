@@ -1,0 +1,21 @@
+<!--pages/introduce/canteen_dong/canteen_dong.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">东餐厅</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  东餐厅又名清韵轩，一共有五层，一层为超市，并且超市周围有很多商铺，二到五层为食堂，我就不推荐大家吃啥了，大家作为新生，我推荐都尝一尝，找到自己最喜欢吃的，东区餐厅五层的桌椅类似饭店的桌椅，并且有大的圆桌，算个小饭店、有麻辣香锅、烤鱼、小炒等，可以用来同学聚会或者平时改善伙食。  
+  东区食堂开放时间为6:30-8:30；11:30-1:30；5:00-8:30，除了五楼每个楼层都有电视，一台微波炉，一桶免费汤、一桶开水，吃完后把餐具放在餐具回收处，剩饭倒入洞里。食堂一层有饭卡充值处，不太好找，建议在网上充值：下载中国建设银行APP->悦生活->生活缴费->IC卡、联名卡充值->缴费单位选择太原理工大学校园卡(充值),校验身份信息为你的身份证号。
+      </text>
+</view>

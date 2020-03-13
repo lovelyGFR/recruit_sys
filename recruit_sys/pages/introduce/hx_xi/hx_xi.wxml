@@ -1,0 +1,26 @@
+<!--pages/introduce/hx_xi/hx_xi.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">西门</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  明向校区西门邻接魏榆路，对面为太原师范学院。太原师范学院女生多，并且澡堂是单间，对于来自南方的同学或者不习惯羞于在别人面前赤身裸体洗澡的同学可以考虑去太原师范澡堂洗，太原师范澡堂是单人浴室，可以使用现金，五元五十分钟，出来退一块钱，超时补钱。并且西门是“小白龙”的终点，所以也是一个起点。 
+      </text>
+</view>
+
+
+
+
+
+

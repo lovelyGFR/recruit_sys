@@ -1,0 +1,23 @@
+<!--pages/introduce/yun_shu/yun_shu.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">云顶书院-数港基地</text>
+    <image class="go" src="../../../images/gps.jpg" bindtap="go"></image>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  云顶书院-数港基地位于大数据学院九层。建立了包括开放式临时工位、半开放式卡座、多功能报告厅、会议室、讨论室、休闲区、健身房、茶歇区在内的多元化公共活动区域，满足学员在此开展跨界的交流需求。并且配备多台苹果电脑，供云顶成员免费使用。
+      </text>
+</view>
+
+
+

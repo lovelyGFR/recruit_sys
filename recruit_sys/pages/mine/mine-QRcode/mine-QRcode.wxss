@@ -1,0 +1,50 @@
+/* pages/mine/mine-QRcode/mine-QRcode.wxss */
+
+page{
+  background-color: black;
+}
+
+.QR{
+  margin-left:80rpx;
+  margin-top:150rpx;
+  width:590rpx;
+  height:790rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.QR1{
+  width:510rpx;
+  height:510rpx;
+  margin-top:70rpx; 
+  margin-bottom:30rpx;
+}
+
+.QRtext{
+  font-family:PingFang SC;
+  font-size:24rpx;
+  display:flex;
+  flex-direction:column;
+  color:#7E8388;
+}
+
+.text1{
+   text-align: center;
+   margin-bottom:10rpx;
+}
+.text2{
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

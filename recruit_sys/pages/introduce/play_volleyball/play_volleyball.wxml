@@ -1,0 +1,19 @@
+<!--pages/introduce/play_volleyball/play_volleyball.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">排球场</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  明向校区的排球场三三两两的散落在一些地方，导航定位的是管委楼东边的两个排球场，体育课选修排球的话会在这里上课，并且如果有一些排球比赛，也基本会在这里举行。体育课选修硬排的会在东区篮球场地内的排球场上课。
+      </text>
+</view>

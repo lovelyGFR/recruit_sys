@@ -1,0 +1,19 @@
+<!--pages/introduce/college/college.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" >
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">学院楼</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  我是软件学院的，其他学院也不清楚，所以在这里给大家简单介绍一下软件学院的情况：一层为软件学院团委所在地，三层是辅导员办公室所在地，其他地方学长也不了解，因为我不常去学院楼。这里也不给大家导航了，大家可以在导航首页进行导航
+      </text>
+</view>

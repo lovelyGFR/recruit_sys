@@ -1,0 +1,21 @@
+<!--pages/introduce/send/send.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">快递点</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  在这里我给大家总结一下快递点。近邻宝，是一个快递代收点，在西区，东区都有。西区的近邻宝在13,14号楼之间，不仅有门面，还有两排自动取货柜。东区的近邻宝在东区超市的北入口处韵达快递的店面中，由韵达快递代理。圆通，申通，韵达，邮政，顺丰都会由近邻宝代收。菜鸟驿站位于西区，在西区超市打印店对面，和中通快递离的很近。中通快递只在西区有，位于西区泽瑞超市的旁边，可以取件，也可以寄件。京东快递地址位于西区，在13,14号楼之间，和近邻宝紧挨着。在东区3,4号楼之间也有一排快递柜，有时圆通，申通，韵达，邮政，顺丰也会寄到这里。
+  明向校区收取快递须知:       （1）明向校区收快递地址填写：山西省晋中市榆次区乌金山镇太原理工大学。      （2）收快递的时候最好加上区域：东区，西区，北区，这样就会往填的区域送    （3）上面第二点也不是绝对的，有时候可能会出现一个区域快递很多，另一个区域快递相对较少，则会进行适当调整，当然这种情况较少，还有中通，京东只在西区有接收点，建华快递只在东区有接收点，所以在东区或者西区住的同学尽量避免自己所在区域没有的快递。
+  在这里不给大家导航了，大家在导航首页可以进行导航。
+      </text>
+</view>

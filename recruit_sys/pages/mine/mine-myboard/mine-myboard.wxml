@@ -1,0 +1,31 @@
+<!--pages/mine/mine-myboard/mine-myboard.wxml-->
+
+<view class="msg-box">
+
+<!--空盒子-->
+ <view class="headbox">欢迎提出你的宝贵意见！</view>
+
+<!--留言-->
+   <view class="send-box">
+   <text  class="btmwords">为你的云顶梦保驾护航！</text>
+      <textarea bindinput="changeInputValue" maxlength="-1" class="input" type="text" value="{{inputVal}}" placeholder="请在这里提交您的宝贵意见吧(一条最多200字)~" placeholder-class="place-input"/>
+     <text  class="btmword">根据你们的留言我们会做出相关调整，感谢您的提议！</text>
+      <button  bindtap="addMsg" class="postit">提交</button>
+  
+     </view>
+    
+   <!--留言列表-->
+   <view class="already">已提交的建议：</view>
+   <text class="msg-info" wx:if="{{words.length==0}}">暂无提交哦……</text>
+      
+   <view class="list-view">
+
+      <view class="item" wx:for="{{words}}" wx:key="{{index}}">
+        <text class="text1">{{item.content}}</text>
+        <icon type="cancel" bindtap="DelMsg" data-index="{{index}}" class="close-btn" color="black"  data-id="{{item.id}}"/>
+      </view>
+
+   </view>
+
+
+</view>

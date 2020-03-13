@@ -1,0 +1,21 @@
+<!--pages/introduce/supermarket_eat/supermarket_eat.wxml-->
+<view class="image" style="height: 30vh; width: 100vw">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="view_title">
+    <text class="title">东区餐厅小吃商铺</text>
+</view>
+
+<view class="view_word">
+      <text class="word" space="emsp">  小吃店铺有三间。这三个小吃铺比餐厅开放的时间长，晚上开到10:30，如果有的同学在东区上课来不及早饭建议在这里买个饼子，味道很可以的。
+  从西到东，第一家卖：铁板炒饭，荷叶饼，山东杂粮煎饼，熏肉饼，酸辣粉，麻辣烫。第二家卖：脆皮鸡饭，汉堡，炸串，饼子，水饺，混沌，牛肉面，重庆小面。第三家卖：鸡蛋灌饼，夹肉饼，麻辣拌，烤冷面，手抓饼，土耳其烤肉拌饭。
+      </text>
+</view>
+
